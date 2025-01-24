@@ -21,85 +21,65 @@
   <style>
     @font-face {
       font-family: 'Samarkan';
-      src: url('./fonts/SAMAN_.ttf') format("truetype")
+      src: url('./fonts/SAMAN_.ttf') format("truetype");
     }
   </style>
 </head>
 <body class="bg-indigo-950 text-white font-sans m-0">
-  <header class="py-8 flex justify-evenly items-center">
-    <div>
-      <img 
-        src="imgs/VTHT logo.png" 
-        alt="vtht logo" 
-        class="w-[120px] sm:w-[250px] h-auto hidden sm:block">
-    </div>
-    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold font-[Samarkan] sm:w-auto">
-      Aavishkaar - 2025
+  <!-- Header -->
+  <header class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white">
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img 
+      src="imgs/VTHT logo.png" 
+      alt="VTHT logo" 
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block">
+    
+    <!-- Centered Title -->
+    <h1 class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]">
+      Aavishkaar-2025
     </h1>
-    <div>
-      <img 
-        src="imgs/Aavishkaar logo.png" 
-        alt="aavishkaar logo" 
-        width="60" 
-        class="hidden sm:block">
-    </div>
+    
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img 
+      src="imgs/Aavishkaar logo.png" 
+      alt="aavishkaar logo" 
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block">
   </header>
+  
 
+  
 
-  <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-    <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-    <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-    <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-    <a href="culturals.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-    <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-    <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">About Us</a>
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10">
+    <a href="#" class="text-yellow-800 px-2 py-1 rounded transition font-bold text-xs sm:text-base">Home</a>
+    <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base">Day-1</a>
+    <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base">Day-2</a>
+    <a href="culturals.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base">Culturals</a>
+    <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base">Sports</a>
+    <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base">About Us</a>
   </nav>
   
-  <div class="p-3 flex justify-around flex-col sm:flex-row mt-5">
-    <div class="bg-blue-950 flex justify-center flex-col gap-4 min-w-80 rounded-lg p-2 ">
-      <div class="flex justify-center">
-        <a href="day1.html" class="py-2 px-5 font-bold"><img src="imgs/day1/nationalconference.jpeg" alt="National Conference"
-          class="h-48 rounded-md"></a>
-      </div>
-      <div class="flex justify-center items-center gap-2 flex-col">
-        <a href="day1.html" class="py-2 px-5 font-bold"><h1 class="text-yellow-300 font-bold font-sans text-3xl">National Conference</h1></a>
-      </div>
+  <!-- Main Content -->
+  <div class="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+    <!-- Event Cards -->
+    <div class="bg-blue-950 flex flex-col items-center gap-4 rounded-lg p-4">
+      <a href="day1.html"><img src="imgs/day1/nationalconference.jpeg" alt="National Conference" class="h-40 sm:h-48 rounded-md"></a>
+      <a href="day1.html" class="text-yellow-300 font-bold text-2xl text-center">National Conference</a>
     </div>
-    <br />
-    <div class="bg-blue-950 flex justify-center flex-col gap-4 min-w-80 rounded-lg p-2">
-      <div class="flex justify-center">
-        <a href="day2.html" class="py-2 px-5 font-bold"><img src="imgs/day2/projectexpo.jpeg" alt="National Conference"
-          class="h-48 rounded-md"></a>
-      </div>
-      <div class="flex justify-center items-center gap-2 flex-col">
-        <a href="day2.html" class="py-2 px-5 font-bold"><h1 class="text-yellow-300 font-bold font-sans text-3xl">Project Expo</h1></a>
-      </div>
+    <div class="bg-blue-950 flex flex-col items-center gap-4 rounded-lg p-4">
+      <a href="day2.html"><img src="imgs/day2/projectexpo.jpeg" alt="Project Expo" class="h-40 sm:h-48 rounded-md"></a>
+      <a href="day2.html" class="text-yellow-300 font-bold text-2xl text-center">Project Expo</a>
     </div>
-    <br />
-    <div class="bg-blue-950 flex justify-center flex-col gap-4 min-w-80 rounded-lg p-2">
-      <div class="flex justify-center">
-        <a href="culturals.html" class="py-2 px-5 font-bold"><img src="imgs/Culturals.jpg" alt="Culturals"
-          class="h-48 rounded-md"></a>
-      </div>
-      <div class="flex justify-center items-center gap-2 flex-col">
-        <a href="culturals.html" class="py-2 px-5 font-bold"><h1 class="text-yellow-300 font-bold font-sans text-3xl">Culturals</h1></a>
-        
-      </div>
+    <div class="bg-blue-950 flex flex-col items-center gap-4 rounded-lg p-4">
+      <a href="culturals.html"><img src="imgs/Culturals.jpg" alt="Culturals" class="h-40 sm:h-48 rounded-md"></a>
+      <a href="culturals.html" class="text-yellow-300 font-bold text-2xl text-center">Culturals</a>
     </div>
-    <br />
-    <div class="bg-blue-950 flex justify-center flex-col gap-4 min-w-80 rounded-lg p-2">
-      <div class="flex justify-center">
-        <a href="sports.html" class="py-2 px-5 font-bold"><img src="imgs/Sports.jpg" alt="Sports"
-          class="h-48 rounded-md"></a>
-      </div>
-      <div class="flex justify-center items-center gap-2 flex-col">
-        <a href="sports.html" class="py-2 px-5 font-bold"><h1 class="text-yellow-300 font-bold font-sans text-3xl">Sports</h1></a>
-        
-      </div>
+    <div class="bg-blue-950 flex flex-col items-center gap-4 rounded-lg p-4">
+      <a href="sports.html"><img src="imgs/Sports.jpg" alt="Sports" class="h-40 sm:h-48 rounded-md"></a>
+      <a href="sports.html" class="text-yellow-300 font-bold text-2xl text-center">Sports</a>
     </div>
   </div>
-  </div>
-  <br />
+  
   <div class="text-center mt-5">
     <h1 class="text-xl sm:text-3xl text-yellow-400 font-bold">YOUR PROCESS</h1>
     <div class="flex justify-around flex-col mt-6 gap-6 items-center sm:flex-row">
@@ -125,7 +105,9 @@
       </div>
     </div>
   </div>
-  <footer class="bg-blue-950 text-white mt-10 py-6">
+
+  <!-- Footer -->
+  <footer class="bg-blue-950 mt-10 py-6">
     <!-- Footer Links -->
     <div class="flex justify-center mb-4">
       <ul class="flex space-x-6">
@@ -178,7 +160,7 @@
         aavishkaar@velhightech.com
       </p>
       <p>
-        <span class="text-yellow-300 font-bold">Address:</span> 60, Avadi-Vel
+        <span class="text-yellow-300 font-bold ">Address:</span> 60, Avadi-Vel
         Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
       </p>
       <a
