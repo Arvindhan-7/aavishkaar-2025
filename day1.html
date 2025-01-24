@@ -14,52 +14,88 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['"Google Sans"', 'Arial', 'sans-serif'],
-              samarkan: ['Samarkan', 'sans-serif'],
+              sans: ['"Google Sans"', "Arial", "sans-serif"],
+              samarkan: ["Samarkan", "sans-serif"],
             },
           },
-        }
-      }
+        },
+      };
     </script>
     <style>
       @font-face {
-        font-family: 'Samarkan';
-        src: url('./fonts/SAMAN___.ttf') format("truetype")
+        font-family: "Samarkan";
+        src: url("./fonts/SAMAN___.ttf") format("truetype");
       }
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
-    <header class="py-8 flex justify-evenly items-center">
-      <div>
-        <img 
-          src="imgs/VTHT logo.png" 
-          alt="vtht logo" 
-          class="w-[120px] sm:w-[250px] h-auto hidden sm:block">
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold font-[Samarkan] sm:w-auto">
-        Aavishkaar - 2025
+    <header
+      class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+    >
+      <!-- VTHT Logo - Hidden on tablets -->
+      <img
+        src="imgs/VTHT logo.png"
+        alt="VTHT logo"
+        class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+      />
+
+      <!-- Centered Title -->
+      <h1
+        class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+      >
+        Aavishkaar-2025
       </h1>
-      <div>
-        <img 
-          src="imgs/Aavishkaar logo.png" 
-          alt="aavishkaar logo" 
-          width="60" 
-          class="hidden sm:block">
-      </div>
+
+      <!-- Aavishkaar Logo - Hidden on tablets -->
+      <img
+        src="imgs/Aavishkaar logo.png"
+        alt="aavishkaar logo"
+        class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+      />
     </header>
-    <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3 z-10">
-      <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">Home</a>
-      <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">Day-1</a>
-      <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">Day-2</a>
-      <a href="culturals.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">Culturals</a>
-      <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">Sports</a>
-      <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-sans font-bold text-[10px] sm:text-xl">About Us</a>
+    <!-- Navigation -->
+    <nav
+      class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+    >
+      <a
+        href="index.html"
+        class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-1</a
+      >
+      <a
+        href="day2.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-2</a
+      >
+      <a
+        href="culturals.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Culturals</a
+      >
+      <a
+        href="sports.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Sports</a
+      >
+      <a
+        href="aboutus.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >About Us</a
+      >
     </nav>
+
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-6xl">
+      <h1
+        class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl px-2"
+      >
         National Conference 2025 - ASST
       </h1>
-      <p class="text-center text-lg mt-5 pl-10 pr-10 text-base sm:text-xl ">
+      <p class="text-center text-lg mt-5 pl-10 pr-10 text-sm md:text-xl">
         The National Conference is an academic event where students present
         their research papers or technical ideas to a panel of judges, fostering
         knowledge-sharing and innovation. AAVISHKAAR-2025 offers a premier
@@ -71,69 +107,87 @@
       <div class="flex justify-center">
         <img
           src="poster\culturals\Day1\NationalConference.png"
-          class="h-[400px] sm:h-[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
           alt="National Conference Poster"
         />
       </div>
       <br />
-      <div class="flex justify-center py-6 sm:pl-10 sm:pr-10 ">
-        <div class="flex justify-around flex-col w-3/4 sm:flex-row w-1/2 sm:w-full">
+      <div class="flex justify-center p-3 w-full">
+        <div
+          class="flex justify-around flex-col sm:flex-col lg:flex-row gap-6 p-3 w-full"
+        >
+          <!-- Faculty Coordinator Card -->
           <div
-            class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-2 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+            class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
           >
-            <div>
-              <h2
-                class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"
-              >
-                Faculty Coordinator
-              </h2>
-            </div>
-            <p class="text-xl text-center"><b>Name:</b> Dr.J.B. Veeramalini</p>
-            <p class="text-xl text-center">
-              <b>Designation:</b> HoD of Chemical Department
+            <h3
+              class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"
+            >
+              Faculty Coordinator
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Name:</b> Prof. Pradeep Katta
             </p>
-            <p class="text-xl text-center"><b>Contact:</b> 9789657001</p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Designation:</b> HoD of S&H Department
+            </p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Contact:</b> 9940227242
+            </p>
           </div>
-          <br />
+
+          <!-- Student Coordinator 1 Card -->
           <div
-            class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+            class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
           >
-            <div>
-              <h2 class="text-yellow-300 font-bold text-3xl text-center">
-                Student Coordinator
-              </h2>
-            </div>
-            <p class="text-xl text-center" class="text-xl text-center">
-              <b>Name:</b> Harini. P
+            <h3
+              class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"
+            >
+              Student Coordinator
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Name:</b> Devaraj
             </p>
-            <p class="text-xl text-center"><b>Dept & Year:</b> ECE-A & IV yr</p>
-            <p class="text-xl text-center"><b>Contact:</b> 7418897952</p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Dept & Year:</b> ECE-A & IV yr
+            </p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Contact:</b> 9841303982
+            </p>
           </div>
-          <br />
+
+          <!-- Student Coordinator 2 Card -->
           <div
-            class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+            class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
           >
-            <div>
-              <h2 class="text-yellow-300 font-bold text-3xl text-center">
-                Student Coordinator
-              </h2>
-            </div>
-            <p class="text-xl text-center"><b>Name:</b> Praveen</p>
-            <p class="text-xl text-center">
-              <b>Dept & Year:</b> CSE-AIML & III yr
+            <h3
+              class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"
+            >
+              Student Coordinator
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Name:</b> Dharshini. G
             </p>
-            <p class="text-xl text-center"><b>Contact:</b> 9677197883</p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Dept & Year:</b> CSE-A & III yr
+            </p>
+            <p class="text-base sm:text-lg md:text-xl text-center">
+              <b>Contact:</b> 8248893211
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="flex justify-center pl-10 pr-10">
-        <div class="flex flex-col  w-3/4 sm:flex-row justify-around gap-3 w-full p-4">
-          <div
-            class="bg-blue-950 rounded-lg  border border-gray-600 sm:w-1/2 w-full p-4"
-          >
+      <div class="flex justify-center p-3 w-full">
+        <div
+          class="flex flex-col sm:flex-col md:flex-row justify-center gap-5 p-3 w-full"
+        >
+          <!-- Rules and Guidelines Card -->
+          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
             <div>
-              <h2 class="text-yellow-300 text-center font-bold text-3xl">
+              <h2
+                class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl"
+              >
                 Rules and Guidelines
               </h2>
             </div>
@@ -167,65 +221,93 @@
             </ul>
           </div>
 
-          <div
-            class="bg-blue-950 rounded-lg border border-gray-600 sm:w-1/2 w-full p-4"
-          >
+          <!-- Notes and Requirements Card -->
+          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
             <div>
-              <h2 class="text-yellow-300 text-center font-bold text-3xl">
+              <h2
+                class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl"
+              >
                 Notes and Requirements
               </h2>
-              <ul class="p-3 flex justify-around gap-3 flex-col">
-                <li><p>A PowerPoint Presentation (PPT) is mandatory</p></li>
-                <li>
-                  <p>
-                    The topic and PPT must be original. Plagiarism or
-                    AI-generated content is prohibited
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    The paper should follow the proper academic format for
-                    publication
-                  </p>
-                </li>
-                <li><p><b class="text-yellow-300">Note1:</b>One chance to present for each team</p></li>
-                <li><p><b class="text-yellow-300">Note2:</b>Ensure originality and academic rigor in your presentation</b></p></li>
-              </ul>
             </div>
+            <ul class="p-3 flex justify-around gap-3 flex-col">
+              <li><p>A PowerPoint Presentation (PPT) is mandatory</p></li>
+              <li>
+                <p>
+                  The topic and PPT must be original. Plagiarism or AI-generated
+                  content is prohibited
+                </p>
+              </li>
+              <li>
+                <p>
+                  The paper should follow the proper academic format for
+                  publication
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b class="text-yellow-300">Note1:</b> One chance to present
+                  for each team
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b class="text-yellow-300">Note2:</b> Ensure originality and
+                  academic rigor in your presentation
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="text-base flex justify-evenly">
-        <p><b class="text-yellow-300">Registration Fee:</b> Rs.500 per Team</p>
-        <p><b class="text-yellow-300">Registration Deadline:</b> March 1st, 2025</p>
-      </div>
-      <br>
+     <div class="">
+      <div
+      class="flex flex-col sm:flex-row justify-around gap-2"
+    >
+      <p class="text-center">
+        <b class="text-yellow-300">Registration Fee:</b> Rs.500 per Team
+      </p>
+      <p class="text-center">
+        <b class="text-yellow-300">Registration Deadline:</b> March 1st, 2025
+      </p>
+    </div>
+     </div>
+      <br />
 
       <div class="flex justify-around text-xl center">
         <!--in center-->
-          <p><b class="text-yellow-300">Payment Details</b></p> 
-        </div>
-        <div class="flex justify-around center py-5 text-xl">
+        <p><b class="text-yellow-300">Payment Details</b></p>
+      </div>
+      <div class="flex justify-around center py-5 text-xl">
         <!--in center-->
-          <p>Fee Payment details are mentioned <a style="color: yellow;" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf">Here</a></p> 
-        </div>
-        <br>
+        <p>
+          Fee Payment details are mentioned
+          <a style="color: yellow" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf"
+            >Here</a
+          >
+        </p>
+      </div>
+      <br />
 
+      <div class="p-3">
         <a
           href="https://forms.gle/VVC7zHrkBB4CeZmq5"
           class="block w-full bg-yellow-400 text-black p-3 font-bold rounded-lg text-center hover:bg-yellow-500 transition-colors text-lg"
           >Register</a
         >
-
+      </div>
     </div>
 
-    <footer class="bg-blue-950 text-white mt-10 py-6">
+    <footer class="bg-blue-950 mt-10 py-6">
       <!-- Footer Links -->
       <div class="flex justify-center mb-4">
         <ul class="flex space-x-6">
           <li>
-            <a href="index.html" class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl">
+            <a
+              href="index.html"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >
               Home
             </a>
           </li>
@@ -267,7 +349,7 @@
         </ul>
       </div>
       <!-- Contact Info -->
-      <div class="text-center flex gap-3 flex-col">
+      <div class="text-center flex gap-3 flex-col text-[13px] sm:text-xl">
         <p>
           <span class="text-yellow-300 font-bold">Contact:</span>
           aavishkaar@velhightech.com
