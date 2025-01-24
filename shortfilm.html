@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShortFilm</title>
+    <link rel="icon" href="imgs/Aavishkaar logo.png" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -29,24 +30,69 @@
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
-    <header class="relative flex items-center justify-center w-full h-40 bg-indigo-950 text-white">
-      <img src="imgs/VTHT logo.png" alt="VTHT logo" class="absolute left-5 h-20">
-      <h1 class="text-8xl text-center mx-16 font-[Samarkan]">Aavishkaar-2025</h1>
-      <img src="imgs/Aavishkaar logo.png" alt="aavishkaar logo" class="absolute right-5 h-20">
-    </header>
+    <header
+    class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+  >
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img
+      src="imgs/VTHT logo.png"
+      alt="VTHT logo"
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
 
-    <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-      <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-      <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-      <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-      <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-      <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-      <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl ">About Us</a>
-    </nav>
+    <!-- Centered Title -->
+    <h1
+      class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+    >
+      Aavishkaar-2025
+    </h1>
+
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img
+      src="imgs/Aavishkaar logo.png"
+      alt="aavishkaar logo"
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+  </header>
+
+  <nav
+  class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+>
+  <a
+    href="index.html"
+    class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Home</a
+  >
+  <a
+    href="day1.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Day-1</a
+  >
+  <a
+    href="day2.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Day-2</a
+  >
+  <a
+    href="#"
+    class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Culturals</a
+  >
+  <a
+    href="sports.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Sports</a
+  >
+  <a
+    href="aboutus.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >About Us</a
+  >
+</nav>
 
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-6xl">ShortFilm</h1>
-      <p class="text-center text-lg mt-5 px-5 py-3 pl-10 pr-10 text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2">ShortFilm</h1>
+      <p class="text-center mt-5 px-3 text-sm md:text-xl">
         The Short Film event at AAVISHKAAR-2025 invites participants to showcase their filmmaking skills by creating a short film. Teams of two will submit a video that tells a compelling story, utilizing creative cinematography, editing, and narrative techniques. The event provides a platform for aspiring filmmakers to express their vision and creativity within a limited timeframe.
       </p>
       <br />
@@ -55,82 +101,82 @@
           src="poster/culturals/Culturals/Shortfilm.png"
           alt="ShortFilm"
           height="700"
-          class="h-[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
         />
       </div>
     </div>
     <br />
 
-    <div class="flex justify-center pl-10 pr-10">
-      <div class="flex justify-around flex-col sm:flex-row w-1/2 sm:w-full gap-5">
-        <div class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h3 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
-          <p class="text-xl text-center"><b>Name:</b> Samuel</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> CSE-AIML & III yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 6379666972</p>
-          <br />
+    <div class="flex justify-center p-3 w-full">
+      <div class="flex justify-around flex-col sm:flex-col lg:flex-row gap-6 p-3 w-full">
+        <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+          <h3 class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Name:</b> Samuel</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Dept & Year:</b> CSE-AIML & III yr</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Contact:</b> 6379666972</p>
         </div>
         <div class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h3 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
-          <p class="text-xl text-center"><b>Name:</b> Tharun Kumar. E</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> CSE-AIML & II yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 9941281842</p>
-          <br />
+          <h3 class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Name:</b> Tharun Kumar. E</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Dept & Year:</b> CSE-AIML & II yr</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Contact:</b> 9941281842</p>
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col sm:flex-row justify-around gap-3 w-full p-3 pl-10 pr-10">
-      <div class="bg-blue-950 rounded-lg border border-gray-600 sm:w-1/2 w-full p-4">
-        <h3 class="text-yellow-300 text-center font-bold text-3xl">Rules and Guidelines</h3>
-        <ul class="p-3 flex justify-around gap-3 flex-col">
-          <li>
-            <p><b class="text-yellow-300">Presenting Team:</b> Maximum of 2 members per team</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Time Limit:</b> The short film must be between 5 and 10 minutes long</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Format:</b> Teams must submit their short films (videos) in advance to the AAVISHKAAR mail ID</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Theme:</b> Open theme, but must be decent and respectful. Strictly no vulgar or inappropriate language or content</p>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-blue-950 rounded-lg border border-gray-600 sm:w-1/2 w-full p-4">
-        <h3 class="text-yellow-300 text-center font-bold text-3xl">Notes and Requirements</h3>
-        <ul class="p-3 flex justify-around gap-3 flex-col">
-          <li>
-            <p><b class="text-yellow-300">Storytelling:</b> The film should have a coherent and engaging story that captures the audience's attention</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Cinematography:</b> The visual quality of the film should be clear and effective in conveying the story</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Editing:</b> Proper editing, transitions, and pacing should enhance the storytelling</p>
-          </li>
-          <li><p><b class="text-yellow-300">Note1:</b>Short films must be submitted before the event to the provided email</p></li>
-          <li><p><b class="text-yellow-300">Note2:</b>Ensure that the content is respectful and aligns with the event's guidelines</b></p></li>
-        </ul>
+    <div class="p-3 flex justify-center w-full">
+      <div class="flex flex-col sm:flex-col md:flex-row justify-center gap-5 w-full p-3">
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <h3 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl">Rules and Guidelines</h3>
+          <ul class="p-3 flex justify-around gap-3 flex-col">
+            <li>
+              <p><b class="text-yellow-300">Presenting Team:</b> Maximum of 2 members per team</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Time Limit:</b> The short film must be between 5 and 10 minutes long</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Format:</b> Teams must submit their short films (videos) in advance to the AAVISHKAAR mail ID</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Theme:</b> Open theme, but must be decent and respectful. Strictly no vulgar or inappropriate language or content</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <h3 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl">Notes and Requirements</h3>
+          <ul class="p-3 flex justify-around gap-3 flex-col">
+            <li>
+              <p><b class="text-yellow-300">Storytelling:</b> The film should have a coherent and engaging story that captures the audience's attention</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Cinematography:</b> The visual quality of the film should be clear and effective in conveying the story</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Editing:</b> Proper editing, transitions, and pacing should enhance the storytelling</p>
+            </li>
+            <li><p><b class="text-yellow-300">Note1:</b>Short films must be submitted before the event to the provided email</p></li>
+            <li><p><b class="text-yellow-300">Note2:</b>Ensure that the content is respectful and aligns with the event's guidelines</b></p></li>
+          </ul>
+        </div>
       </div>
     </div>
     <br />
 
-    <div class="flex justify-around p-5 text-xl">
-      <!--in left side-->
-      <p><b style="color: yellow;">Registration Fee:</b> Rs.300 per Team</p><p><b style="color: yellow;">Registration Deadline:</b> March 1st, 2025</p>
-    </div>
+    <div
+    class="flex flex-col sm:flex-row justify-around gap-2"
+  >
+    <p class="text-center">
+      <b class="text-yellow-300">Registration Fee:</b> Rs.300 per Participant
+    </p>
+    <p class="text-center">
+      <b class="text-yellow-300">Registration Deadline:</b> March 1st, 2025
+    </p>
+  </div>
     <br>
 
-    <div class="flex justify-around text-xl center">
-      <!--in center-->
-        <p><b style="color: yellow;">Payment Details</b></p> 
-      </div>
-      <div class="flex justify-around center py-5 text-xl">
-      <!--in center-->
-      <p>Fee Payment details are mentioned <a style="color: yellow;" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf">Here</a></p> 
-      </div>
+    <p class="text-center text-lg text-yellow-300"><b>Payment Details</b></p> 
+      <p class="text-center text-lg">Fee Payment details are mentioned <a style="color: yellow;" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf">Here</a></p>
       <br>
     <a href="https://forms.gle/9gwKshxVwhCtNjhr7" class="block w-full bg-yellow-400 text-black p-3 font-bold rounded-lg text-center hover:bg-yellow-500 transition-colors text-lg mt-5">Register Now</a>
 
