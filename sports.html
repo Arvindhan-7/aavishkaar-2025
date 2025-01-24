@@ -26,272 +26,416 @@
   </style>
 </head>
 <body class="bg-indigo-950 text-white font-sans m-0">
-  <header class="relative flex items-center justify-center w-full h-40 bg-indigo-950 text-white">
-    <img src="imgs/VTHT logo.png" alt="VTHT logo" class="absolute left-5 h-20">
-    <h1 class="text-8xl text-center mx-16 font-[Samarkan]">Aavishkaar-2025</h1>
-    <img src="imgs/Aavishkaar logo.png" alt="aavishkaar logo" class="absolute right-5 h-20">
+  <header
+    class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+  >
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img
+      src="imgs/VTHT logo.png"
+      alt="VTHT logo"
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+
+    <!-- Centered Title -->
+    <h1
+      class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+    >
+      Aavishkaar-2025
+    </h1>
+
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img
+      src="imgs/Aavishkaar logo.png"
+      alt="aavishkaar logo"
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
   </header>
 
   <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
-  <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-    <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-    <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-    <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-    <a href="culturals.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-    <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-    <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">About Us</a>
-  </nav>
+  <nav
+      class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+    >
+      <a
+        href="index.html"
+        class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-1</a
+      >
+      <a
+        href="day2.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-2</a
+      >
+      <a
+        href="culturals.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Culturals</a
+      >
+      <a
+        href="sports.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Sports</a
+      >
+      <a
+        href="aboutus.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >About Us</a
+      >
+    </nav>
 
   <!--Title&Description-->
   <section class="mt-5">
-    <h1 class="text-yellow-300 font-bold font-sans text-6xl text-center">Sports</h1>
-    <p class="text-center text-lg mt-5 pl-10 pr-10 text-xl">Showcase your skills in exciting team events like Cricket, Futsal (Football), Volleyball, Kabaddi, Kho Kho, and Throwball, or test your individual prowess in Table Tennis and Chess. Experience the spirit of competition, sportsmanship, and strategy in this dynamic platform for athletes to shine<br>
+    <h1 class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl px-2">Sports</h1>
+    <p class="text-center text-lg mt-5 pl-10 pr-10 text-sm md:text-xl">Showcase your skills in exciting team events like Cricket, Futsal (Football), Volleyball, Kabaddi, Kho Kho, and Throwball, or test your individual prowess in Table Tennis and Chess. Experience the spirit of competition, sportsmanship, and strategy in this dynamic platform for athletes to shine<br /> <br />
     Join us at AAVISHKAAR-2025 and bring your energy, passion, and team spirit to the field!</p>
 </section><br>
 
 <!--Coordinator context-->
   <!--Linear in one line arrangement-->
-  <div class="flex justify-center py-8">
-    <div class="flex justify-around flex-col sm:flex-row w-1/2 sm:w-full gap-4">
-      <!--Faculty coordinator-->
-      <div class="sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-        <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Faculty Coordinator</b></h2>
-        <p class="text-xl text-center"><b>Name:</b> Karthik prakash</p>
-        <p class="text-xl text-center"><b>Designation:</b> Physical Director</p>
-        <p class="text-xl text-center"><b>Contact:</b> 9941678769</p><br>
+  <div class="flex justify-center mt-5">
+    <div class="flex flex-col sm:flex-col lg:flex-row gap-6 p-5 w-full">
+      <!-- Faculty Coordinator -->
+      <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+        <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2">
+          <b>Faculty Coordinator</b>
+        </h2>
+        <p class="text-xl text-center">
+          <b>Name:</b> Dr. M. Gopinath
+        </p>
+        <p class="text-xl text-center">
+          <b>Designation:</b> Associate Dean-IIC
+        </p>
+        <p class="text-xl text-center">
+          <b>Contact:</b> 9994041130
+        </p>
       </div>
-      <!--Student coordinator-->
-        <div class="sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h2>
-          <p class="text-xl text-center"><b>Name:</b> Kamesh. K</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> ECE-A & III yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 8015861761</p><br>
-        </div>
-        <div class="sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h2>
-          <p class="text-xl text-center"><b>Name:</b> Abirami.S</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> CSE-A & III yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 9940011792</p><br>
-        </div>
+      
+      <!-- Student Coordinator 1 -->
+      <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+        <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2">
+          <b>Student Coordinator</b>
+        </h2>
+        <p class="text-xl text-center">
+          <b>Name:</b> Arvindhan G.
+        </p>
+        <p class="text-xl text-center">
+          <b>Dept & Year:</b> IT & IV yr
+        </p>
+        <p class="text-xl text-center">
+          <b>Contact:</b> 9361811963
+        </p>
+      </div>
+      
+      <!-- Student Coordinator 2 -->
+      <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+        <h2 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2">
+          <b>Student Coordinator</b>
+        </h2>
+        <p class="text-xl text-center">
+          <b>Name:</b> Pavithra V.
+        </p>
+        <p class="text-xl text-center">
+          <b>Dept & Year:</b> CSE-B & IV yr
+        </p>
+        <p class="text-xl text-center">
+          <b>Contact:</b> 9498394576
+        </p>
+      </div>
     </div>
   </div>
+  
 
   <!--Boys events-->
   <div class="text-2xl text-yellow-300 font-bold text-center mt-3">
     <h2 class="text-yellow-300 text-4xl text-center font-bold">Mens Sport Events 2025</h2>
   </div>
 <!--All events in 2x5 grid with images-->
-<div class="flex justify-around flex-col sm:flex-row pl-10 pr-10">
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
+  <!-- Group Dance Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
     <div class="flex justify-center">
-      <a href="futsal.html" class="event-button-a font-bold"><img src="imgs/sports/futsal.jpeg" alt="Futsal" height="180" class="h-[180px] rounded-lg" ></a>
+      <a href="groupdance.html">
+        <img
+          src="imgs/culturals/groupdance.jpeg"
+          alt="Group Dance"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
     </div>
-    <div>
-      <a href="futsal.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Football</h2></a>
+    <div class="text-center mt-3">
+      <a href="groupdance.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Group Dance</h2>
+      </a>
     </div>
-    
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="cricket.html" class="event-button-a font-bold"><img src="imgs/sports/cricket.jpeg" alt="Cricket" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="cricket.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Cricket</h2></a>
-    </div>
-    
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="khokho.html" class="event-button-a font-bold"><img src="imgs/sports/khokho.jpg" alt="Kho-Kho" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="khokho.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Kho-Kho</h2></a>
-    </div>
-    
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="kabbadi.html" class="event-button-a font-bold"><img src="imgs/sports/kabbadi.png" alt="Kabaddi" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="kabbadi.html" class="event-button-a font-bold"><h2 class="text-2xl text-yellow-300 font-bold text-center mt-3">Kabbadi</h2></a>
-    </div>
-    
-  </section>
-</div>
-
-<div class="flex justify-around flex-col sm:flex-row">
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="volleyball.html" class="event-button-a font-bold"><img src="imgs/sports/volleyball.jpeg" alt="Volleyball" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="volleyball.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Volleyball</h2></a>
-    </div>
-    
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="tabletennis.html" class="event-button-a font-bold"><img src="imgs/sports/tabletennis.jpeg" alt="Table Tennis" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="tabletennis.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Table Tennis</h2></a>
-    </div>
-
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="chess.html" class="event-button-a font-bold"><img src="imgs/sports/chess.jpeg" alt="Chess" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="chess.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Chess</h2></a>
-    </div>
-    
-  </section>
-</div><br><br><br>  
-
-<!--Girls events-->
-<div class="flex justify-around flex-col sm:flex-row">
-  <h2 class="text-yellow-300 text-4xl text-center font-bold">Womens Sport Events 2025</h2>
-</div>
-<div class="flex justify-around flex-col sm:flex-row">
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="kabbadig.html" class="event-button-a font-bold"><img src="imgs/sports/kabbadi.png" alt="Kabaddi" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="kabbadig.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Kabaddi</h2></a>
-    </div>
-
-  </section>
-  
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="throwball.html" class="event-button-a font-bold"><img src="imgs/sports/throwball.jpeg" alt="Throwball" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="throwball.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Throwball</h2></a>
-    </div>
-    
-  </section>
-
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-    <div class="flex justify-center">
-      <a href="volleyball.html" class="event-button-a font-bold"><img src="imgs/sports/volleyball.jpeg" alt="Throwball" height="180" class="h-[180px] rounded-lg"></a>
-    </div>
-    <div>
-      <a href="volleyball.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Volleyball</h2></a>
-    </div>
-  </section>
-</div>
-
-
-
-<div class="flex justify-around flex-col sm:flex-row">
-  <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-  <div class="flex justify-center">
-    <a href="khokhog.html" class="event-button-a font-bold"><img src="imgs/sports/khokho.jpg" alt="Kho-Kho" height="180" class="h-[180px] rounded-lg"></a>
   </div>
-  <div>
-    <a href="khokhog.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Kho-Kho</h2></a>
-  </div>
-  
-</section>
 
-<section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-  <div class="flex justify-center">
-    <a href="tabletennisg.html" class="event-button-a font-bold"><img src="imgs/sports/tabletennis.jpeg" alt="Table Tennis" height="180" class="h-[180px] rounded-lg"></a>
+  <!-- Group Singing Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
+    <div class="flex justify-center">
+      <a href="groupsinging.html">
+        <img
+          src="imgs/culturals/GroupSinging.jpeg"
+          alt="Group Singing"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
+    </div>
+    <div class="text-center mt-3">
+      <a href="groupsinging.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Group Singing</h2>
+      </a>
+    </div>
   </div>
-  <div>
-    <a href="tabletennisg.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Table Tennis</h2></a>
-  </div>
-  
-</section>
 
-<section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-  <div class="flex justify-center">
-    <a href="chessg.html" class="event-button-a font-bold"><img src="imgs/sports/chess.jpeg" alt="Chess" height="180" class="h-[180px] rounded-lg"></a>
+  <!-- Solo Dance Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
+    <div class="flex justify-center">
+      <a href="solodance.html">
+        <img
+          src="imgs/culturals/solodance.jpeg"
+          alt="Solo Dance"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
+    </div>
+    <div class="text-center mt-3">
+      <a href="solodance.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Solo Dance</h2>
+      </a>
+    </div>
   </div>
-  <div>
-    <a href="chessg.html" class="event-button-a font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Chess</h2></a>
+
+  <!-- Solo Singing Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
+    <div class="flex justify-center">
+      <a href="solosinging.html">
+        <img
+          src="imgs/culturals/solosinging.jpeg"
+          alt="Solo Singing"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
+    </div>
+    <div class="text-center mt-3">
+      <a href="solosinging.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Solo Singing</h2>
+      </a>
+    </div>
   </div>
-</section>
+
+  <!-- Photography Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
+    <div class="flex justify-center">
+      <a href="photography.html">
+        <img
+          src="imgs/culturals/photography.jpeg"
+          alt="Photography"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
+    </div>
+    <div class="text-center mt-3">
+      <a href="photography.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Photography</h2>
+      </a>
+    </div>
+  </div>
+
+  <!-- Short Film Card -->
+  <div class="bg-blue-950 rounded-lg p-3">
+    <div class="flex justify-center">
+      <a href="shortfilm.html">
+        <img
+          src="imgs/culturals/shortfilm.jpeg"
+          alt="Short Film"
+          class="h-[180px] rounded-lg"
+        />
+      </a>
+    </div>
+    <div class="text-center mt-3">
+      <a href="shortfilm.html">
+        <h2 class="text-3xl text-yellow-300 font-bold">Short Film</h2>
+      </a>
+    </div>
+  </div>
+
+  <!-- Additional cards follow the same structure... -->
 </div>
 <br>
 
+<!--Girls events-->
+<div class="">
+  <!-- Title -->
+  <div class="flex justify-center">
+    <h2 class="text-yellow-300 text-4xl text-center font-bold">
+      Womens Sport Events 2025
+    </h2>
+  </div>
+
+  <!-- Events Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-10 p-5">
+    <!-- Kabaddi -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="kabbadig.html" class="event-button-a font-bold">
+          <img src="imgs/sports/kabbadi.png" alt="Kabaddi" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="kabbadig.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Kabaddi</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- Throwball -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="throwball.html" class="event-button-a font-bold">
+          <img src="imgs/sports/throwball.jpeg" alt="Throwball" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="throwball.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Throwball</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- Volleyball -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="volleyball.html" class="event-button-a font-bold">
+          <img src="imgs/sports/volleyball.jpeg" alt="Volleyball" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="volleyball.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Volleyball</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- Kho-Kho -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="khokhog.html" class="event-button-a font-bold">
+          <img src="imgs/sports/khokho.jpg" alt="Kho-Kho" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="khokhog.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Kho-Kho</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- Table Tennis -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="tabletennisg.html" class="event-button-a font-bold">
+          <img src="imgs/sports/tabletennis.jpeg" alt="Table Tennis" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="tabletennisg.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Table Tennis</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- Chess -->
+    <section class="bg-blue-950 rounded-lg p-4">
+      <div class="flex justify-center">
+        <a href="chessg.html" class="event-button-a font-bold">
+          <img src="imgs/sports/chess.jpeg" alt="Chess" height="180" class="h-[180px] rounded-lg">
+        </a>
+      </div>
+      <div>
+        <a href="chessg.html" class="event-button-a font-bold">
+          <h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Chess</h2>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+<br>
+
 <!--Note-->
-<p style="text-align: center; font-size: 1.2rem; font-size: text-xl; padding-top: 45px;"><b style="color: yellow;">Note </b> Each event has individual Registration</p><br>
+<p class="text-center"><b style="color: yellow;">Note </b> Each event has individual Registration</p><br>
 
 <!--Footer that holds the nav properties in a vertical order, with location-->
-<footer class="bg-blue-950 text-white mt-10 py-6">
+<footer class="bg-blue-950 mt-10 py-6">
   <!-- Footer Links -->
-   <div class="flex justify-center mb-4">
-     <ul class="flex space-x-6">
-       <li>
-         <a
-           href="index.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >Home</a
-         >
-       </li>
-       <li>
-         <a
-           href="day1.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >Day-1</a
-         >
-       </li>
-       <li>
-         <a
-           href="day2.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >Day-2</a
-         >
-       </li>
-       <li>
-         <a
-           href="culturals.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >Culturals</a
-         >
-       </li>
-       <li>
-         <a
-           href="sports.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >Sports</a
-         >
-       </li>
-       <li>
-         <a
-           href="aboutus.html"
-           class="hover:text-yellow-300 transition font-bold text-xl"
-           >About Us</a
-         >
-       </li>
-     </ul>
-   </div>
-   <div class="text-center flex gap-3 flex-col">
-     <p>
-       <span class="text-yellow-300 font-bold">Contact:</span>
-       aavishkaar@velhightech.com
-     </p>
-     <p>
-       <span class="text-yellow-300 font-bold">Address:</span> 60, Avadi-Vel
-       Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
-     </p>
-     <a
-       href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062"
-       target="_blank"
-       class="text-yellow-300 font-bold hover:text-white transition"
-       >View on Google Maps</a
-     >
-   </div>
- </footer>
+  <div class="flex justify-center mb-4">
+    <ul class="flex space-x-6">
+      <li>
+        <a
+          href="index.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="day1.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >Day-1</a
+        >
+      </li>
+      <li>
+        <a
+          href="day2.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >Day-2</a
+        >
+      </li>
+      <li>
+        <a
+          href="culturals.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >Culturals</a
+        >
+      </li>
+      <li>
+        <a
+          href="sports.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >Sports</a
+        >
+      </li>
+      <li>
+        <a
+          href="aboutus.html"
+          class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >About Us</a
+        >
+      </li>
+    </ul>
+  </div>
+  <!-- Contact Info -->
+  <div class="text-center flex gap-3 flex-col text-[13px] sm:text-xl">
+    <p>
+      <span class="text-yellow-300 font-bold">Contact:</span>
+      aavishkaar@velhightech.com
+    </p>
+    <p>
+      <span class="text-yellow-300 font-bold">Address:</span> 60, Avadi-Vel
+      Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
+    </p>
+    <a
+      href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062"
+      target="_blank"
+      class="text-yellow-300 font-bold hover:text-white transition"
+      >View on Google Maps</a
+    >
+  </div>
+</footer>
 </body>
 </html>

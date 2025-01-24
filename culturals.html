@@ -29,264 +29,309 @@
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
-    <header class="relative flex items-center justify-center w-full h-40 bg-indigo-950 text-white">
-      <img src="imgs/VTHT logo.png" alt="VTHT logo" class="absolute left-5 h-20">
-      <h1 class="text-8xl text-center mx-16 font-[Samarkan]">Aavishkaar-2025</h1>
-      <img src="imgs/Aavishkaar logo.png" alt="aavishkaar logo" class="absolute right-5 h-20">
-    </header>
+    <header
+    class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+  >
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img
+      src="imgs/VTHT logo.png"
+      alt="VTHT logo"
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+
+    <!-- Centered Title -->
+    <h1
+      class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+    >
+      Aavishkaar-2025
+    </h1>
+
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img
+      src="imgs/Aavishkaar logo.png"
+      alt="aavishkaar logo"
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+  </header>
+
 
     <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
-    <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-      <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-      <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-      <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-      <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-      <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-      <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl ">About Us</a>
+    <nav
+      class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+    >
+      <a
+        href="index.html"
+        class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-1</a
+      >
+      <a
+        href="day2.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-2</a
+      >
+      <a
+        href="culturals.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Culturals</a
+      >
+      <a
+        href="sports.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Sports</a
+      >
+      <a
+        href="aboutus.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >About Us</a
+      >
     </nav>
 
     <!--Title&Description-->
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-6xl">Culturals</h1>
-      <p class="text-center text-lg mt-5 pl-10 pr-10 text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl px-2">Culturals</h1>
+      <p class="text-center text-lg mt-5 pl-10 pr-10 text-sm md:text-xl">
         Showcase your dance moves in Group Dance or Solo Dance (Fusion),
         captivate with your voice in Group Singing (Band) and Solo Singing, or
         express your artistic vision through Short Film, Photography, and
         Channel Surfing. Test your intellect in the exciting Quiz Competition,
         game your way to glory in E-Sports, or dazzle with confidence in the
-        Ramp Walk.<br />
+        Ramp Walk.<br /><br/>
         Join us at Aavishkar-2025 and let your creativity and passion shine!
       </p>
     </div>
     <br />
 
-    <div class="flex justify-center py-10">
-      <div class="flex justify-around flex-col sm:flex-row w-1/2 sm:w-full gap-4">
+    <div class="flex justify-center mt-5">
+      <div class="flex flex-col sm:flex-col lg:flex-row gap-6 p-5 w-full">
+        <!-- Faculty Coordinator -->
         <div
-          class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+          class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
         >
-          <div>
-            <h3
-              class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"
-            >
-              <b>Faculty Coordinator</b>
-            </h3>
-          </div>
-          <p class="text-xl text-center"><b>Name:</b> Dr.M.Gopinath</p>
-          <p class="text-xl text-center">
+          <h3
+            class="text-yellow-300 text-2xl md:text-3xl font-bold text-center"
+          >
+            Faculty Coordinator
+          </h3>
+          <p class="text-base sm:text-lg md:text-xl text-center mt-2">
+            <b>Name:</b> Dr. M. Gopinath
+          </p>
+          <p class="text-base sm:text-lg md:text-xl text-center">
             <b>Designation:</b> Associate Dean-IIC
           </p>
-          <p class="text-xl text-center"><b>Contact:</b> 9994041130</p>
-          <br />
+          <p class="text-base sm:text-lg md:text-xl text-center">
+            <b>Contact:</b> 9994041130
+          </p>
         </div>
-        <!--Student coordinator-->
+    
+        <!-- Student Coordinator 1 -->
         <div
-          class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+          class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
         >
           <h3
-            class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"
+            class="text-yellow-300 text-2xl md:text-3xl font-bold text-center"
           >
-            <b>Student Coordinator</b>
+            Student Coordinator
           </h3>
-          <p class="text-xl text-center"><b>Name:</b> Arvindhan.G</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> IT & IV yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 9361811963</p>
-          <br />
+          <p class="text-base sm:text-lg md:text-xl text-center mt-2">
+            <b>Name:</b> Arvindhan G.
+          </p>
+          <p class="text-base sm:text-lg md:text-xl text-center">
+            <b>Dept & Year:</b> IT & IV yr
+          </p>
+          <p class="text-base sm:text-lg md:text-xl text-center">
+            <b>Contact:</b> 9361811963
+          </p>
         </div>
+    
+        <!-- Student Coordinator 2 -->
         <div
-          class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
+          class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer"
         >
           <h3
-            class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"
+            class="text-yellow-300 text-2xl md:text-3xl font-bold text-center"
           >
-            <b>Student Coordinator</b>
+            Student Coordinator
           </h3>
-          <p class="text-xl text-center"><b>Name:</b> Pavithra.V</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> CSE-B & IV yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 9498394576</p>
-          <br />
+          <p class="text-base sm:text-lg md:text-xl text-center mt-2">
+            <b>Name:</b> Pavithra V.
+          </p>
+          <p class="text-base sm:text-lg md:text-xl text-center">
+            <b>Dept & Year:</b> CSE-B & IV yr
+          </p>
+          <p class="text-base sm:text-lg md:text-xl text-center">
+            <b>Contact:</b> 9498394576
+          </p>
         </div>
       </div>
     </div>
-    <br />
+    
     <div>
       <h2 class="text-center font-bold text-yellow-300 text-4xl">
         Our Events
       </h2>
     </div>
 
-    <div class="flex justify-around flex-col sm:flex-row pl-10 pr-10">
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-3">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
+      <!-- Group Dance Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
         <div class="flex justify-center">
-          <a href="groupdance.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\groupdance.jpeg"
-            alt="Group Dance"
-            class="h-[180px] rounded-lg"
-          />
+          <a href="groupdance.html">
+            <img src="imgs/culturals/groupdance.jpeg" alt="Group Dance" class="h-[180px] rounded-lg" />
           </a>
         </div>
-        <div class="flex flex-col gap-2">
-          <div>
-            <a href="groupdance.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Group Dance</h2></a>
-          </div>
-              
-        </div>
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-3">
-        <div class="flex justify-center">
-          <a href="groupsinging.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\GroupSinging.jpeg"
-            alt="Group Singing"
-            class="h-[180px] rounded-lg"
-          />
+        <div class="text-center mt-3">
+          <a href="groupdance.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Group Dance</h2>
           </a>
         </div>
-        <div class="flex flex-col gap-2">
-          <div>
-            <a href="groupsinging.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Group Singing</h2></a>
-          </div>
-
-            <!--On clicking this, the click has to be directed to National Conference page-->
-              
-        </div>
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-3">
-        <div class="flex justify-center">
-          <a href="solodance.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\solodance.jpeg"
-            alt="Solo Dance"
-            class="h-[180px] rounded-lg"
-          /></a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <div class="">
-            <a href="solodance.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Solo Dance</h2></a>
-          </div>
-         
-            <!--On clicking this, the click has to be directed to National Conference page-->
-              
-
-        </div>
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-3">
-        <div class="flex justify-center">
-          <a href="solosinging.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\solosinging.jpeg"
-            alt="Solo Singing"
-            class="h-[180px] rounded-lg"
-            
-          /></a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <div>
-            <a href="solosinging.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Solo Singing</h2></a>
-          </div>
-          
-        </div>
-      </section>
-    </div>
-
-    <div class="flex justify-around flex-col sm:flex-row sm:mt-10 pl-10 pr-10">
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-        <div class="flex justify-center">
-          <a href="photography.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\photography.jpeg"
-            alt="Photography"
-            class="h-[180px] rounded-lg"
-          />
-        </div></a>
-        <div>
-          <a href="photography.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Photography</h2></a>
-        </div>
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-        <div class="flex justify-center">
-          <a href="shortfilm.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs/culturals/shortfilm.jpeg"
-            alt="ShortFilm"
-            class="h-[180px] rounded-lg"
-          /></a>
-        </div>
-        <div>
-          <a href="shortfilm.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Short Film</h2></a>
-        </div>
+      </div>
     
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
+      <!-- Group Singing Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
         <div class="flex justify-center">
-          <a href="channelsurfing.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\channelsurfing.jpeg"
-            alt="Channel Surfing"
-            class="h-[180px] rounded-lg"
-          /></a>
+          <a href="groupsinging.html">
+            <img src="imgs/culturals/GroupSinging.jpeg" alt="Group Singing" class="h-[180px] rounded-lg" />
+          </a>
         </div>
-        <div>
-          <a href="channelsurfing.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Channel Surfing</h2></a>
+        <div class="text-center mt-3">
+          <a href="groupsinging.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Group Singing</h2>
+          </a>
         </div>
-      
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
+      </div>
+    
+      <!-- Solo Dance Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
         <div class="flex justify-center">
-          <a href="quizcompetetion.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\quizcompetetion.jpeg"
-            alt="Quiz Competition"
-            class="h-[180px] rounded-lg"
-          /></a>
+          <a href="solodance.html">
+            <img src="imgs/culturals/solodance.jpeg" alt="Solo Dance" class="h-[180px] rounded-lg" />
+          </a>
         </div>
-        <div>
-          <a href="quizcompetetion.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Quiz Competition</h2></a>
+        <div class="text-center mt-3">
+          <a href="solodance.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Solo Dance</h2>
+          </a>
         </div>
-        
-      </section>
+      </div>
+    
+      <!-- Solo Singing Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="solosinging.html">
+            <img src="imgs/culturals/solosinging.jpeg" alt="Solo Singing" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="solosinging.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Solo Singing</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Photography Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="photography.html">
+            <img src="imgs/culturals/photography.jpeg" alt="Photography" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="photography.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Photography</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Short Film Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="shortfilm.html">
+            <img src="imgs/culturals/shortfilm.jpeg" alt="Short Film" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="shortfilm.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Short Film</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Channel Surfing Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="channelsurfing.html">
+            <img src="imgs/culturals/channelsurfing.jpeg" alt="Channel Surfing" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="channelsurfing.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl  text-yellow-300 font-bold">Channel Surfing</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Quiz Competition Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="quizcompetetion.html">
+            <img src="imgs/culturals/quizcompetetion.jpeg" alt="Quiz Competition" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="quizcompetetion.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl  text-yellow-300 font-bold">Quiz Competition</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Ramp Walk Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="rampwalk.html">
+            <img src="imgs/culturals/rampwalk.jpeg" alt="Ramp Walk" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="rampwalk.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl  text-yellow-300 font-bold">Ramp Walk</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- E-Sports Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="esports.html">
+            <img src="imgs/culturals/esports.jpeg" alt="E-Sports" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="esports.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl  text-yellow-300 font-bold">E-Sports</h2>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Music Show Card -->
+      <div class="bg-blue-950 rounded-lg p-3">
+        <div class="flex justify-center">
+          <a href="musicshow.html">
+            <img src="imgs/culturals/musicshow.jpeg" alt="Music Show" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="musicshow.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl  text-yellow-300 font-bold">Music Show</h2>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-around flex-col sm:flex-row sm:mt-10">
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-        <div class="flex justify-center">
-          <a href="rampwalk.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\rampwalk.jpeg"
-            alt="Ramp Walk"
-            class="h-[180px] rounded-lg"
-          /></a>
-        </div>
-        <div>
-          <a href="rampwalk.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Ramp Walk</h2></a>
-        </div>
-        
-      </section>
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-        <div class="flex justify-center">
-          <a href="esports.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\esports.jpeg"
-            alt="E-Sports"
-            class="h-[180px] rounded-lg"
-          /></a>
-        </div>
-        <div>
-          <a href="esports.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">E-Sports</h2></a>
-        </div>
-        
-      </section>
-
-      <section class="sm:bg-blue-950 min-w-64 mt-10 rounded-lg p-4">
-        <div class="flex justify-center">
-          <a href="musicshow.html" class=" py-2 px-8 rounded-lg font-bold"><img
-            src="imgs\culturals\musicshow.jpeg"
-            alt="Music show"
-            class="h-[180px] rounded-lg"
-          /></a>
-        </div>
-        <div>
-          <a href="musicshow.html" class=" py-2 px-8 rounded-lg font-bold"><h2 class="text-3xl text-yellow-300 font-bold text-center mt-3">Music Show</h2></a>
-        </div>
-        
-      </section>
-    </div>
+    
     <br>
     <br>
 
@@ -295,54 +340,57 @@
     
 
     <!--Footer that holds the nav properties in a vertical order, with location-->
-    <footer class="bg-blue-950 text-white mt-10 py-6">
+    <footer class="bg-blue-950 mt-10 py-6">
+      <!-- Footer Links -->
       <div class="flex justify-center mb-4">
         <ul class="flex space-x-6">
           <li>
             <a
               href="index.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Home</a
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="day1.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Day-1</a
             >
           </li>
           <li>
             <a
               href="day2.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Day-2</a
             >
           </li>
           <li>
             <a
               href="culturals.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Culturals</a
             >
           </li>
           <li>
             <a
               href="sports.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Sports</a
             >
           </li>
           <li>
             <a
               href="aboutus.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >About Us</a
             >
           </li>
         </ul>
       </div>
-      <div class="text-center flex gap-3 flex-col">
+      <!-- Contact Info -->
+      <div class="text-center flex gap-3 flex-col text-[13px] sm:text-xl">
         <p>
           <span class="text-yellow-300 font-bold">Contact:</span>
           aavishkaar@velhightech.com

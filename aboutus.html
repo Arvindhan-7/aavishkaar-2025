@@ -30,26 +30,71 @@
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
     <!--This header is the title of the page, which follows on all pages-->
-    <header class="relative flex items-center justify-center w-full h-40 bg-indigo-950 text-white">
-      <img src="imgs/VTHT logo.png" alt="VTHT logo" class="absolute left-5 h-20">
-      <h1 class="text-8xl text-center mx-16 font-[Samarkan]">Aavishkaar-2025</h1>
-      <img src="imgs/Aavishkaar logo.png" alt="aavishkaar logo" class="absolute right-5 h-20">
-    </header>
+    <header
+    class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+  >
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img
+      src="imgs/VTHT logo.png"
+      alt="VTHT logo"
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+
+    <!-- Centered Title -->
+    <h1
+      class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+    >
+      Aavishkaar-2025
+    </h1>
+
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img
+      src="imgs/Aavishkaar logo.png"
+      alt="aavishkaar logo"
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+  </header>
 
     <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
-    <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-      <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-      <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-      <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-      <a href="culturals.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-      <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-      <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">About Us</a>
+    <nav
+      class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+    >
+      <a
+        href="index.html"
+        class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Home</a
+      >
+      <a
+        href="day1.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-1</a
+      >
+      <a
+        href="day2.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Day-2</a
+      >
+      <a
+        href="culturals.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Culturals</a
+      >
+      <a
+        href="sports.html"
+        class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >Sports</a
+      >
+      <a
+        href="aboutus.html"
+        class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+        >About Us</a
+      >
     </nav>
 
     <!--Title-->
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-6xl"><b>About Us</b></h1>
-      <p class="text-center text-lg mt-5 pl-10 pr-10 text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl "><b>About Us</b></h1>
+      <p class="text-center text-sm mt-3 px-3 md:text-xl">
         AAVISHKAAR-2025 is a landmark event organized by Vel Tech High Tech Dr.
         Rangarajan Dr. Sakunthala Engineering College, Avadi, Chennai. This
         grand celebration of talent, knowledge, and creativity is made possible
@@ -60,8 +105,8 @@
     <br />
 
     <!--Patron1-->
-    <div class="sm:p-10">
-      <div class="flex flex-col md:flex-row justify-around items-center gap-5 pl-10 pr-10">
+    <div class="xl:ml-10 px-5">
+      <div class="flex flex-col md:flex-row justify-around items-center gap-5">
         <div class="flex-shrink-0">
           <img
             src="imgs/aboutus/Rangarajan Sir.jpg"
@@ -72,15 +117,15 @@
         <div class="flex-1">
           <div class="flex flex-col gap-5">
             <div>
-              <p class="text-4xl text-yellow-300 text-center sm:text-left">
+              <p class="text-xl text-yellow-300 text-center sm:text-left md:text-2xl lg:text-3xl xl:text-4xl">
                 <b>Col.Prof.Vel.Shri.Dr.R.Rangarajan</b><br />
               </p>
-              <p class="text-xl font-bold text-center sm:text-left">
+              <p class="text-base font-bold text-center sm:text-left sm:text-lg md:text-base">
                 <b>Founder President and Chairman</b>
               </p>
             </div>
             <div>
-              <p class="text-lg text-center sm:text-left text-xl">
+              <p class="text-sm md:text-base text-center sm:text-left">
                 A visionary leader whose dedication and commitment have shaped the
                 institution into a hub of excellence in education. His guidance
                 continues to inspire the development of events like AAVISHKAAR,
@@ -97,8 +142,8 @@
     <br />
 
     <!--Patron2-->
-    <div class="sm:p-10">
-      <div class="flex flex-col md:flex-row justify-around items-center gap-5 pl-10 pr-10">
+    <div class=" xl:ml-10 px-5">
+      <div class="flex flex-col md:flex-row justify-around items-center gap-5">
         <div class="flex-shrink-0">
           <img
             src="imgs/aboutus/Sakunthala Mam.png"
@@ -109,16 +154,16 @@
         <div class="flex-1">
           <div class="flex flex-col gap-5">
             <div>
-              <p class="text-4xl text-yellow-300 text-center sm:text-left">
+              <p class="text-xl text-yellow-300 text-center sm:text-left md:text-2xl lg:text-3xl xl:text-4xl">
                 <b>Dr. Sakunthala Rangarajan</b><br />
                 
               </p>
-              <p class="text-xl font-bold text-center sm:text-left">
+              <p class="text-base font-bold text-center sm:text-left sm:text-lg md:text-base">
                 <b>Co-Founder and Vice-Chairperson</b>
               </p>
             </div>
             <div>
-              <p class="text-lg text-center sm:text-left text-xl">
+              <p class="text-sm md:text-base text-center sm:text-left">
                 A compassionate leader and driving force behind the
                 institution’s growth. Her unwavering support and vision have
                 nurtured a culture of innovation and excellence, making events
@@ -134,8 +179,8 @@
     <br />
 
     <!--Patron3-->
-    <div class="sm:p-10">
-      <div class="flex flex-col md:flex-row justify-around items-center gap-5 pl-10 pr-10">
+    <div class="xl:ml-10 px-5">
+      <div class="flex flex-col md:flex-row justify-around items-center gap-5">
         <div class="flex justify-center">
           <img
             src="imgs/aboutus/Chairperson Mahalakshmi Kishore.jpg"
@@ -146,16 +191,16 @@
         <div class="flex-1">
           <div class="flex flex-col gap-5">
             <div>
-              <p class="text-4xl text-yellow-300 text-center sm:text-left">
+              <p class="text-xl text-yellow-300 text-center sm:text-left md:text-2xl lg:text-3xl xl:text-4xl">
                 <b>Mrs. Rangarajan Mahalakshmi Kishore</b><br />
                 
               </p>
-              <p class="class=text-xl font-bold">
+              <p class="text-base font-bold text-center sm:text-left sm:text-lg">
                 <b>Chairperson and Managing Trustee</b>
               </p>
             </div>
             <div>
-              <p class="text-lg text-center sm:text-left text-xl">
+              <p class="text-sm  md:text-base text-center sm:text-left">
                 A key driving force behind the smooth operation of the
                 institution, Mrs. Mahalakshmi’s leadership ensures that
                 AAVISHKAAR-2025, and similar events, continue to provide a
@@ -172,8 +217,8 @@
     <br />
 
     <!--Patron4-->
-    <div class="sm:p-10">
-      <div class="flex flex-col md:flex-row justify-around items-center gap-5 pl-10 pr-10">
+    <div class="xl:ml-10 px-5">
+      <div class="flex flex-col md:flex-row justify-around items-center gap-5">
         <div class="flex justify-center">
           <img
             src="imgs/aboutus/kamalanaban Sir.jpg"
@@ -184,15 +229,15 @@
         <div class="flex-1">
           <div class="flex flex-col gap-5">
             <div>
-              <p class="text-4xl text-yellow-300 text-center sm:text-left">
+              <p class="text-xl text-yellow-300 text-center sm:text-left md:text-2xl lg:text-3xl xl:text-4xl">
                 <b>Prof. Dr. E. Kamalanaban</b><br />
               </p>
-              <p class="text-xl font-bold text-center sm:text-left">
+              <p class="text-base font-bold text-center sm:text-left sm:text-lg">
                 <b>Principal of VTHT</b>
               </p>
             </div>
             <div>
-              <p class="text-lg text-center sm:text-left text-xl">
+              <p class="text-sm md:text-base text-center sm:text-left">
                 The visionary leader steering the academic excellence of the
                 institution. As the Principal, Dr. Kamalanaban has been
                 instrumental in conceptualizing and supporting events like
@@ -210,21 +255,21 @@
 
     <!--Team-->
     <div>
-      <h2 class="mt-10 sm:mt-0 text-yellow-300 font-bold text-center text-4xl"><b>Organizing Team</b></h2>
+      <h2 class="mt-3 text-yellow-300 font-bold text-center text-4xl"><b>Organizing Team</b></h2>
     </div>
-    <div class="flex justify-around my-10 sm:flex-row flex-col gap-5 pl-10 pr-10 h-30 w-90">
+    <div class="flex justify-around p-4">
       <div>
         <img
           src="imgs\aboutus\group1.jpeg"
           alt="group1"
-          class="rounded-lg"
+          class="rounded-lg w-[900px]"
           
         />
       </div>
       
     </div>
     <div>
-      <p class="text-center leading-8 p-4 pl-10 pr-10 text-xl">
+      <p class="text-sm md:text-lg text-center p-3 ">
         A dedicated team of students, powered by passion and effort, is behind
         the successful realization of AAVISHKAAR-2025. Under the leadership of
         Dr. M. Gopinath, Associate Dean of IQAC, the organizing team has worked
@@ -234,7 +279,7 @@
       </p>
     </div>
     <!--center-->
-    <p class="text-center leading-8 p-4 text-xl">
+    <p class="text-sm md:text-lg text-center p-3">
       Together, we invite you to join us at AAVISHKAAR-2025, where innovation,
       creativity, and sportsmanship converge to create an unforgettable
       experience
@@ -242,56 +287,57 @@
     <br />
 
     <!--Footer that holds the nav properties in a vertical order, with location-->
-    <footer class="bg-blue-950 text-white mt-10 py-6">
+    <footer class="bg-blue-950 mt-10 py-6">
       <!-- Footer Links -->
       <div class="flex justify-center mb-4">
         <ul class="flex space-x-6">
           <li>
             <a
               href="index.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Home</a
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="day1.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Day-1</a
             >
           </li>
           <li>
             <a
               href="day2.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Day-2</a
             >
           </li>
           <li>
             <a
               href="culturals.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Culturals</a
             >
           </li>
           <li>
             <a
               href="sports.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >Sports</a
             >
           </li>
           <li>
             <a
               href="aboutus.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
+              class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
               >About Us</a
             >
           </li>
         </ul>
       </div>
       <!-- Contact Info -->
-      <div class="text-center flex gap-3 flex-col">
+      <div class="text-center flex gap-3 flex-col text-[13px] sm:text-xl">
         <p>
           <span class="text-yellow-300 font-bold">Contact:</span>
           aavishkaar@velhightech.com
