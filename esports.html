@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="imgs/Aavishkaar logo.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -29,24 +30,69 @@
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
-    <header class="relative flex items-center justify-center w-full h-40 bg-indigo-950 text-white">
-      <img src="imgs/VTHT logo.png" alt="VTHT logo" class="absolute left-5 h-20">
-      <h1 class="text-8xl text-center mx-16 font-[Samarkan]">Aavishkaar-2025</h1>
-      <img src="imgs/Aavishkaar logo.png" alt="aavishkaar logo" class="absolute right-5 h-20">
-    </header>
+    <header
+    class="relative flex items-center justify-center w-full p-5 bg-indigo-950 text-white"
+  >
+    <!-- VTHT Logo - Hidden on tablets -->
+    <img
+      src="imgs/VTHT logo.png"
+      alt="VTHT logo"
+      class="absolute left-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
 
-    <nav class="sticky top-0 bg-yellow-300 shadow-md flex justify-around p-3">
-      <a href="index.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Home</a>
-      <a href="day1.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-1</a>
-      <a href="day2.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Day-2</a>
-      <a href="#" class="text-yellow-800 px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Culturals</a>
-      <a href="sports.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl">Sports</a>
-      <a href="aboutus.html" class="text-gray-900 hover:bg-yellow-400 hover:text-black px-3 py-1 rounded transition font-sans font-bold text-[9px] sm:text-xl ">About Us</a>
-    </nav>
+    <!-- Centered Title -->
+    <h1
+      class="text-4xl sm:text-4xl lg:text-6xl md:text-5xl text-center font-[Samarkan]"
+    >
+      Aavishkaar-2025
+    </h1>
+
+    <!-- Aavishkaar Logo - Hidden on tablets -->
+    <img
+      src="imgs/Aavishkaar logo.png"
+      alt="aavishkaar logo"
+      class="absolute right-5 h-20 hidden sm:hidden md:hidden lg:block"
+    />
+  </header>
+
+  <nav
+  class="sticky top-0 bg-yellow-300 shadow-md flex flex-wrap justify-around p-2 sm:p-3 z-10"
+>
+  <a
+    href="index.html"
+    class="text-gray-900 px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Home</a
+  >
+  <a
+    href="day1.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Day-1</a
+  >
+  <a
+    href="day2.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Day-2</a
+  >
+  <a
+    href="#"
+    class="text-yellow-800 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Culturals</a
+  >
+  <a
+    href="sports.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >Sports</a
+  >
+  <a
+    href="aboutus.html"
+    class="text-gray-900 hover:bg-yellow-400 hover:text-black px-2 py-1 rounded transition font-bold text-xs sm:text-base"
+    >About Us</a
+  >
+</nav>
 
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-6xl">E-Sports</h1>
-      <p class="text-center text-lg mt-5 px-5 py-3 pl-10 pr-10 text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2">E-Sports</h1>
+      <p class="text-center mt-5 px-3 text-sm md:text-xl">
         The E-Sports event is a competitive gaming showdown where teams of two face off in BGMI (Battlegrounds Mobile India) and FreeFire. AAVISHKAAR-2025 offers a thrilling platform for gamers to showcase their strategy, teamwork, and gaming skills.
       </p>
       <br />
@@ -55,148 +101,155 @@
           src="poster/culturals/Culturals/E-Sports.png"
           alt="E-Sports"
           height="700"
-          class="h-[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
         />
       </div>
     </div>
     <br />
 
-    <div class="flex justify-center pl-10 pr-10">
-      <div class="flex justify-around flex-col sm:flex-row w-1/2 sm:w-full gap-5">
-        <div class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h3 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
-          <p class="text-xl text-center"><b>Name:</b> Dhanush M</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> AI&DS-A & III yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 7395951642</p>
+    <div class="flex justify-center p-3 w-full">
+      <div class="flex justify-around flex-col sm:flex-col lg:flex-row gap-6 p-3 w-full">
+        <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+          <h3 class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Name:</b> Dhanush M</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Dept & Year:</b> AI&DS-A & III yr</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Contact:</b> 7395951642</p>
           <br />
         </div>
-        <div class="bg-blue-950 sm:min-w-96 rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
-          <h3 class="text-yellow-300 font-bold text-3xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
-          <p class="text-xl text-center"><b>Name:</b> Srilekha</p>
-          <p class="text-xl text-center"><b>Dept & Year:</b> AI&DS-C & I yr</p>
-          <p class="text-xl text-center"><b>Contact:</b> 9345301594</p>
+        <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
+          <h3 class="text-yellow-300 md:text-3xl lg:text-3xl font-bold text-2xl text-center flex flex-col gap-2"><b>Student Coordinator</b></h3>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Name:</b> Srilekha</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Dept & Year:</b> AI&DS-C & I yr</p>
+          <p class="text-base sm:text-lg md:text-xl text-center"><b>Contact:</b> 9345301594</p>
           <br />
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col sm:flex-row justify-around gap-3 w-full p-3 pl-10 pr-10">
-      <div class="bg-blue-950 rounded-lg border border-gray-600 sm:w-1/2 w-full p-4">
-        <h3 class="text-yellow-300 text-center font-bold text-3xl">Rules and Guidelines</h3>
-        <ul class="p-3 flex justify-around gap-3 flex-col">
-          <li>
-            <p><b class="text-yellow-300">Team Size:</b> Maximum of 2 members per team (duo)</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Game:</b> BGMI (Battlegrounds Mobile India) and FreeFire (either one per team)</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Round Structure:</b> Will be decided according to participants</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Time Limit:</b> Matches will be played until the winner is determined</p>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-blue-950 rounded-lg border border-gray-600 sm:w-1/2 w-full p-4">
-        <h3 class="text-yellow-300 text-center font-bold text-3xl">Notes and Requirements</h3>
-        <ul class="p-3 flex justify-around gap-3 flex-col">
-          <li>
-            <p><b class="text-yellow-300">Strategy:</b> Participants must display excellent teamwork and game tactics</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Communication:</b> Effective communication between team members is essential</p>
-          </li>
-          <li>
-            <p><b class="text-yellow-300">Skill:</b> Competence in gaming mechanics is necessary</p>
-          </li>
-          <li><p><b class="text-yellow-300">Note1:</b>The matches will follow a competitive format</p></li>
-          <li><p><b class="text-yellow-300">Note2:</b> Participants must be prepared for unexpected challenges</p></li>
-        </ul>
+    <div class="flex justify-center p-3 w-full">
+      <div class="flex flex-col sm:flex-col md:flex-row justify-center gap-5 w-full p-3">
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <h3 class="text-yellow-300 text-center font-bold text-3xl">Rules and Guidelines</h3>
+          <ul class="p-3 flex justify-around gap-3 flex-col">
+            <li>
+              <p><b class="text-yellow-300">Team Size:</b> Maximum of 2 members per team (duo)</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Game:</b> BGMI (Battlegrounds Mobile India) and FreeFire (either one per team)</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Round Structure:</b> Will be decided according to participants</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Time Limit:</b> Matches will be played until the winner is determined</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <h3 class="text-yellow-300 text-center font-bold text-3xl">Notes and Requirements</h3>
+          <ul class="p-3 flex justify-around gap-3 flex-col">
+            <li>
+              <p><b class="text-yellow-300">Strategy:</b> Participants must display excellent teamwork and game tactics</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Communication:</b> Effective communication between team members is essential</p>
+            </li>
+            <li>
+              <p><b class="text-yellow-300">Skill:</b> Competence in gaming mechanics is necessary</p>
+            </li>
+            <li><p><b class="text-yellow-300">Note1:</b>The matches will follow a competitive format</p></li>
+            <li><p><b class="text-yellow-300">Note2:</b> Participants must be prepared for unexpected challenges</p></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <br />
 
-    <div class="flex justify-around p-5 text-xl">
-      <!--in left side-->
-      <p><b style="color: yellow;">Registration Fee:</b> Rs.300 per Team</p><p><b style="color: yellow;">Registration Deadline:</b> March 1st, 2025</p>
+    <div
+      class="flex flex-col sm:flex-row justify-around gap-2"
+    >
+      <p class="text-center">
+        <b class="text-yellow-300">Registration Fee:</b> Rs.300 per Participant
+      </p>
+      <p class="text-center">
+        <b class="text-yellow-300">Registration Deadline:</b> March 1st, 2025
+      </p>
     </div>
     <br>
 
-    <div class="flex justify-around text-xl center">
-    <!--in center-->
-      <p><b style="color: yellow;">Payment Details</b></p> 
-    </div>
-    <div class="flex justify-around center py-5 text-xl">
-    <!--in center-->
-    <p>Fee Payment details are mentioned <a style="color: yellow;" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf">Here</a></p> 
-    </div>
+    <p class="text-center text-lg text-yellow-300"><b>Payment Details</b></p> 
+      <p class="text-center text-lg">Fee Payment details are mentioned <a style="color: yellow;" href="doc/AAVISHKAAR-PAYMENT_DETAILS.pdf">Here</a></p>
+      <br>
     
+   <div class="p-3">
     <a href="https://forms.gle/pf2P7q6TFCbdVduZ9" class="block w-full bg-yellow-400 text-black p-3 font-bold rounded-lg text-center hover:bg-yellow-500 transition-colors text-lg">Register Now</a>
+   </div>
 
-    <footer class="bg-blue-950 text-white mt-10 py-6">
-      <div class="flex justify-center mb-4">
-        <ul class="flex space-x-6">
-          <li>
-            <a
-              href="index.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="day1.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Day-1</a
-            >
-          </li>
-          <li>
-            <a
-              href="day2.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Day-2</a
-            >
-          </li>
-          <li>
-            <a
-              href="culturals.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Culturals</a
-            >
-          </li>
-          <li>
-            <a
-              href="sports.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >Sports</a
-            >
-          </li>
-          <li>
-            <a
-              href="aboutus.html"
-              class="hover:text-yellow-300 transition font-bold text-xl"
-              >About Us</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="text-center flex gap-3 flex-col">
-        <p>
-          <span class="text-yellow-300 font-bold">Contact:</span>
-          aavishkaar@velhightech.com
-        </p>
-        <p>
-          <span class="text-yellow-300 font-bold">Address:</span> 60, Avadi-Vel
-          Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
-        </p>
-        <a
-          href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062"
-          target="_blank"
-          class="text-yellow-300 font-bold hover:text-white transition"
-          >View on Google Maps</a
-        >
-      </div>
-    </footer>
+   <footer class="bg-blue-950 mt-10 py-6">
+    <!-- Footer Links -->
+    <div class="flex justify-center mb-4">
+      <ul class="flex space-x-6">
+        <li>
+          <a
+            href="index.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="day1.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >Day-1</a
+          >
+        </li>
+        <li>
+          <a
+            href="day2.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >Day-2</a
+          >
+        </li>
+        <li>
+          <a
+            href="culturals.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >Culturals</a
+          >
+        </li>
+        <li>
+          <a
+            href="sports.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >Sports</a
+          >
+        </li>
+        <li>
+          <a
+            href="aboutus.html"
+            class="hover:text-yellow-300 transition font-bold text-[11px] sm:text-xl"
+            >About Us</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Contact Info -->
+    <div class="text-center flex gap-3 flex-col text-[13px] sm:text-xl">
+      <p>
+        <span class="text-yellow-300 font-bold">Contact:</span>
+        aavishkaar@velhightech.com
+      </p>
+      <p>
+        <span class="text-yellow-300 font-bold">Address:</span> 60, Avadi-Vel
+        Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
+      </p>
+      <a
+        href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062"
+        target="_blank"
+        class="text-yellow-300 font-bold hover:text-white transition"
+        >View on Google Maps</a
+      >
+    </div>
+  </footer>
   </body>
 </html>
