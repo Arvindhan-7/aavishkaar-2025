@@ -24,7 +24,16 @@
       font-family: 'Samarkan';
       src: url('./fonts/SAMAN_.ttf') format("truetype");
     }
+    
+    .custom-title {
+      font-family: 'Samarkan', sans-serif;
+    }
+    
+    .hover-zoom:hover {
+      transform: scale(1.1);
+    }
   </style>
+  
 </head>
 <body class="bg-indigo-950 text-white font-sans m-0">
   <!-- Header -->
@@ -130,6 +139,52 @@
         class="bg-blue-950 rounded-lg text-center p-6 text-m sm:text-lg font-bold text-white shadow-lg transition transform hover:-translate-y-3 w-60 cursor-pointer"
       >
         Win Amazing Prizes
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container mx-auto py-8">
+    <!-- Title with custom font -->
+    <h2 class="text-xl sm:text-4xl text-yellow-400 font-bold text-center mb-8 custom-title:[sans]">GALLERY</h2>
+    
+    <div class="grid grid-cols-12 gap-4">
+      <!-- Consistent Image Size (same height for all) -->
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5204.JPEG" alt="Image 1" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5205.JPEG" alt="Image 2" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5206.JPEG" alt="Image 3" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5207.JPEG" alt="Image 4" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5211.JPEG" alt="Image 5" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5209.JPEG" alt="Image 6" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5208.JPEG" alt="Image 7" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5212.JPEG" alt="Image 8" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
+      </div>
+      <div class="col-span-4 relative">
+        <img src="imgs/gallery/IMG_5217.JPEG" alt="Image 9" 
+             class="w-full h-64 object-cover rounded-lg shadow-md hover-zoom transition-transform duration-300">
       </div>
     </div>
   </div>
