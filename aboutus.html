@@ -27,6 +27,22 @@
         font-family: 'Samarkan';
         src: url('./fonts/SAMAN___.ttf') format("truetype")
       }
+      @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+      }
+      .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+            display: flex;
+      }
+      .marquee {
+            display: flex;
+            min-width: 200%;
+            animation: marquee 15s linear infinite;
+      }
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
@@ -282,6 +298,14 @@
       experience
     </p>
     <br />
+
+    <div class="w-full py-2 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400">
+      <div class="marquee-container">
+          <p class="marquee text-lg md:text-xl font-semibold text-black">
+            🚨 Update! Registration fees are revised & prize pool upgraded! 💰🎉 Check details & register now! 🔥 #AAVISHKAAR2025
+          </p>
+      </div>
+    </div>
 
     <!--Footer that holds the nav properties in a vertical order, with location-->
     <footer class="bg-blue-950 mt-10 py-6">
