@@ -43,6 +43,68 @@
             min-width: 200%;
             animation: marquee 15s linear infinite;
       }
+      @keyframes appear-left {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-right {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-up {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      .animate-on-scroll-left {
+        animation: appear-left ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-right {
+        animation: appear-right ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-image-up{
+        animation: appear-up ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 50%;
+      }
+      .animate-on-scroll-up {
+        animation: appear-up 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
+      }
+      .animate-on-scroll-instant-up {
+        animation: appear-up 1.5s ease-in-out both;
+        animation-range: entry 10% cover 40%;
+      }
+      .animate-on-scroll-instant-left {
+        animation: appear-left 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-right {
+        animation: appear-right 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
@@ -103,7 +165,8 @@
     </nav>
 
     <div class="mt-5">
-      <h1
+      <div class="animate-on-scroll-instant-left">
+        <h1
         class="text-yellow-300 text-center font-bold text-2xl sm:text-2xl md:text-3xl lg:text-4xl px-2"
       >
         National Conference
@@ -118,7 +181,8 @@
       >
         "Advancements in Sustainable Smart Engineering and Technology (ASSET - 2025)"
       </h1>
-      <p class="text-center mt-5 px-3 text-base md:text-xl">
+      </div>
+      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-right">
         The National Conference is an academic event where students present
         their research papers or technical ideas to a panel of judges, fostering
         knowledge-sharing and innovation. AAVISHKAAR-2025 offers a premier
@@ -126,61 +190,61 @@
         Conference.
       </p>
       <br />
-      <div class="flex justify-center">
+      <div class="flex justify-center animate-on-scroll-up">
         <img
           src="poster/culturals/Day1/NationalConference.jpeg"
-          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg "
           alt="National Conference Poster"
         />
       </div>
       <br>
-      <div class="text-center text-2xl sm:text-3xl p-5">
+      <div class="text-center text-2xl sm:text-3xl p-5 animate-on-scroll-instant-up">
         <p><b class="text-yellow-300">Event on:</b> 13<sup>th</sup> March, 2025</p>
       </div>
       
 
-      <div class="flex justify-center p-5">
-        <div class="bg-blue-950 rounded-lg flex flex-col gap-1 sm:gap-1 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full sm:w-1/3">
-          <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
-          <p class="text-base sm:text-lg text-center font-bold">Dr. Veeramalini. J. B</p>
-          <p class="text-sm sm:text-base text-center">HoD - Chemical</p>
-          <p class="text-sm sm:text-base text-center">9789657001</p>
-        </div>
-      </div>
-
-      <div class="flex flex-wrap w-full mt-3 p-2">
-        <!-- Faculty Coordinator 1 -->
-        <div class="w-full sm:w-1/3 p-2">
-          <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
+        <div class="flex justify-center p-5 animate-on-scroll-up">
+          <div class="bg-blue-950 rounded-lg flex flex-col gap-1 sm:gap-1 p-3 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full sm:w-1/3">
             <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
-            <p class="text-base sm:text-lg text-center font-bold">Dr. S. Durga Devi</p>
-            <p class="text-sm sm:text-base text-center">HoD - CSE</p>
+            <p class="text-base sm:text-lg text-center font-bold">Dr. Veeramalini. J. B</p>
+            <p class="text-sm sm:text-base text-center">HoD - Chemical</p>
+            <p class="text-sm sm:text-base text-center">9789657001</p>
           </div>
         </div>
-      
-        <!-- Faculty Coordinator 2 -->
-        <div class="w-full sm:w-1/3 p-2">
-          <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
-            <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
-            <p class="text-base sm:text-lg text-center font-bold">Dr. N. Gayathri
-              </p>
-            <p class="text-sm sm:text-base text-center">HoD - Mechanical</p>
+  
+        <div class="flex flex-wrap w-full mt-3 p-2 animate-on-scroll-left">
+          <!-- Faculty Coordinator 1 -->
+          <div class="w-full sm:w-1/3 p-2">
+            <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
+              <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
+              <p class="text-base sm:text-lg text-center font-bold">Dr. S. Durga Devi</p>
+              <p class="text-sm sm:text-base text-center">HoD - CSE</p>
+            </div>
           </div>
-        </div>
-
         
-        <div class="w-full sm:w-1/3 p-2">
-          <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
-            <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
-            <p class="text-base sm:text-lg text-center font-bold">Mr. M. Manoj Kumar</p>
-            <p class="text-sm sm:text-base text-center">HoD - Civil</p>
+          <!-- Faculty Coordinator 2 -->
+          <div class="w-full sm:w-1/3 p-2">
+            <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
+              <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
+              <p class="text-base sm:text-lg text-center font-bold">Dr. N. Gayathri
+                </p>
+              <p class="text-sm sm:text-base text-center">HoD - Mechanical</p>
+            </div>
+          </div>
+  
+          
+          <div class="w-full sm:w-1/3 p-2">
+            <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
+              <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center">Faculty Coordinator</h3>
+              <p class="text-base sm:text-lg text-center font-bold">Mr. M. Manoj Kumar</p>
+              <p class="text-sm sm:text-base text-center">HoD - Civil</p>
+            </div>
           </div>
         </div>
-      </div>
-      
+        
     
 
-      <div class="flex justify-center items-center mt-3 p-5">
+      <div class="flex justify-center items-center mt-3 p-5 animate-on-scroll-right">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full ">
     
             <!-- Student Coordinator 1 Card -->
@@ -225,8 +289,8 @@
       <div class="">
         <h2 class="text-yellow-300 font-bold text-3xl text-center">Hall Incharges</h2>
          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          <div class="p-5">
-            <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
+          <div class="p-5 animate-on-scroll-up">
+            <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform cursor-pointer h-full">
               <h4 class="font-bold text-yellow-300 text-xl px-3 text-center">CSE</h4>
               <div class="px-3 flex flex-col gap-2 flex-grow">
                 <div class="text-center sm:text-left">
@@ -241,7 +305,7 @@
               </div>
           </div>
         </div>
-          <div class="p-5">
+          <div class="p-5 animate-on-scroll-up">
             <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
               <h4 class="font-bold text-yellow-300 text-xl px-3 text-center">AI & DS</h4>
               <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -257,7 +321,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">CSE - AI & ML</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -273,7 +337,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">Bio Tech</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -289,7 +353,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">IT</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -305,7 +369,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">Chemical</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -321,7 +385,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">ECE</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -337,7 +401,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">MBA</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -353,7 +417,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center">Mechanical</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -369,7 +433,7 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div class="p-5 animate-on-scroll-up">
           <div class="bg-blue-950 rounded-lg flex flex-col gap-2 p-3 border border-gray-600 shadow-lg transition transform  cursor-pointer h-full">
             <h4 class="font-bold text-yellow-300 text-xl text-center ">Civil</h4>
             <div class="px-3 flex flex-col gap-2 flex-grow">
@@ -394,7 +458,7 @@
           class="flex flex-col sm:flex-col md:flex-row justify-center gap-5 p-3 w-full"
         >
           <!-- Rules and Guidelines Card -->
-          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4 animate-on-scroll-left">
             <div>
               <h2
                 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl"
@@ -440,7 +504,7 @@
           </div>
 
           <!-- Notes and Requirements Card -->
-          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+          <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4 animate-on-scroll-right">
             <div>
               <h2
                 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl"
@@ -485,7 +549,7 @@
         >
 
         
-          <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer h-full">
+          <div class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-2 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer h-full animate-on-scroll-up">
             <h3 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl">National Conference Themes and Prizes</h3>
             <ul class="p-3 flex justify-around gap-3 flex-col">
               <li>
