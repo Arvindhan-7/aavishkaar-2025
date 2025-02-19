@@ -43,6 +43,68 @@
             min-width: 200%;
             animation: marquee 15s linear infinite;
       }
+      @keyframes appear-left {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-right {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-up {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      .animate-on-scroll-left {
+        animation: appear-left ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-right {
+        animation: appear-right ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-image-up{
+        animation: appear-up ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 50%;
+      }
+      .animate-on-scroll-up {
+        animation: appear-up 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
+      }
+      .animate-on-scroll-instant-up {
+        animation: appear-up 1.5s ease-in-out both;
+        animation-range: entry 10% cover 40%;
+      }
+      .animate-on-scroll-instant-left {
+        animation: appear-left 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-right {
+        animation: appear-right 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
@@ -103,8 +165,8 @@
     </nav>
 
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2">Quiz Competition</h1>
-      <p class="text-center mt-5 px-3 text-base md:text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2 animate-on-scroll-instant-left">Quiz Competition</h1>
+      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-right ">
         The Quiz Competition at AAVISHKAAR-2025 is a test of knowledge and quick thinking, where teams of two will compete in a fast-paced environment. This event offers a platform for participants to showcase their general knowledge, reasoning abilities, and quick reflexes across a range of topics. The competition will follow a format similar to popular quiz shows, making it an exciting challenge for all participants.
       </p>
       <br />
@@ -113,12 +175,12 @@
           src="poster/culturals/Culturals/Quiz.jpeg"
           alt="Quiz Competition"
           height="700"
-          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg animate-on-scroll-instant-up"
         />
       </div>
     </div>
     <br>
-      <div class="text-center text-2xl sm:text-3xl p-5">
+      <div class="text-center text-2xl sm:text-3xl p-5 animate-on-scroll-up">
         <p><b class="text-yellow-300">Event on:</b> 15<sup>th</sup> March, 2025</p>
       </div>
 

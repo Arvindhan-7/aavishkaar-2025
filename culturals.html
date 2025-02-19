@@ -66,7 +66,7 @@
       @keyframes appear-up {
         from {
           opacity: 0;
-          transform: translateY(40px);
+          transform: translateY(100px);
         }
         to {
           opacity: 1;
@@ -169,7 +169,7 @@
     <!--Title&Description-->
     <div class="mt-5">
       <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2 animate-on-scroll-instant-left">Culturals</h1>
-      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-right">
+      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-up">
         Showcase your dance moves in Group Dance or Solo Dance (Fusion),
         captivate with your voice in Group Singing (Band) and Solo Singing, or
         express your artistic vision through Short Film, Photography, and
@@ -191,7 +191,7 @@
     </div>
 
     <div class="flex justify-center items-center w-full mt-3 p-2">
-  <div class="flex flex-wrap justify-center w-full max-w-5xl animate-on-scroll-left">
+  <div class="flex flex-wrap justify-center w-full max-w-5xl animate-on-scroll-instant-left">
     <!-- Faculty Coordinator 1 -->
     <div class="w-full sm:w-1/2 p-2">
       <div class="bg-blue-950 rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
@@ -214,7 +214,7 @@
 
 
     <div class="flex justify-center items-center mt-3 p-5">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full animate-on-scroll-right">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full animate-on-scroll-instant-up">
   
           <!-- Student Coordinator 1 Card -->
           <div class="bg-blue-950 rounded-lg flex flex-col gap-1 sm:gap-1 p-3 sm:p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-2 cursor-pointer">
@@ -258,20 +258,22 @@
   </div><br><br>
 
   <!-- Music Show Card -->
-  <div class="text-center">
-    <h2 class="text-4xl text-yellow-300 font-bold">Music Show</h2>
-  </div>
-  <div class="p-6">
-    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto">
-      <div class="flex justify-center">
-        <a href="musicshow.html">
-          <img src="imgs/culturals/musicshow.jpg" alt="Music Show" class="h-[180px] rounded-lg" />
-        </a>
-      </div>
-      <div class="text-center mt-3">
-        <a href="musicshow.html">
-          <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Music Show</h2>
-        </a>
+  <div class="">
+    <div class="text-center">
+      <h2 class="text-4xl text-yellow-300 font-bold">Music Show</h2>
+    </div>
+    <div class="p-6  animate-on-scroll-up">
+      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto animate-on-scroll-up">
+        <div class="flex justify-center">
+          <a href="musicshow.html">
+            <img src="imgs/culturals/musicshow.jpg" alt="Music Show" class="h-[180px] rounded-lg" />
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="musicshow.html">
+            <h2 class="text-2xl sm:text-2xl lg:text-3xl text-yellow-300 font-bold">Music Show</h2>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -284,9 +286,9 @@
     </div>
   
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
       <!-- Quiz Competition Card -->
-      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto">
+      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto animate-on-scroll-up">
         <div class="flex justify-center">
           <a href="quizcompetetion.html">
             <img src="imgs/culturals/quizcompetetion.jpeg" alt="Quiz Competition" class="h-[180px] rounded-lg" />
@@ -300,7 +302,7 @@
       </div>
   
       <!-- E-Sports Card -->
-      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto">
+      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full max-w-md mx-auto animate-on-scroll-up">
         <div class="flex justify-center">
           <a href="esports.html">
             <img src="imgs/culturals/esports.jpeg" alt="E-Sports" class="h-[180px] rounded-lg" />
@@ -325,9 +327,9 @@
   </div>
 
   <!-- Cards Grid -->
-  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
     <!-- Group Dance Card -->
-    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
       <div class="flex justify-center">
         <a href="groupdance.html">
           <img src="imgs/culturals/groupdance.jpeg" alt="Group Dance" class="h-[180px] rounded-lg" />
@@ -341,7 +343,7 @@
     </div>
 
     <!-- Group Singing Card -->
-    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
       <div class="flex justify-center">
         <a href="groupsinging.html">
           <img src="imgs/culturals/GroupSinging.jpeg" alt="Group Singing" class="h-[180px] rounded-lg" />
@@ -355,7 +357,7 @@
     </div>
 
     <!-- Channel Surfing Card -->
-    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
       <div class="flex justify-center">
         <a href="channelsurfing.html">
           <img src="imgs/culturals/channelsurfing.jpeg" alt="Channel Surfing" class="h-[180px] rounded-lg" />
@@ -369,7 +371,7 @@
     </div>
 
     <!-- Short Film Card -->
-    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+    <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
       <div class="flex justify-center">
         <a href="shortfilm.html">
           <img src="imgs/culturals/shortfilm.jpeg" alt="Short Film" class="h-[180px] rounded-lg" />
@@ -394,10 +396,10 @@
       </div>
     
       <!-- Cards Grid -->
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 animate-on-scroll-up">
    
         <!-- Solo Dance Card -->
-        <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+        <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
           <div class="flex justify-center">
             <a href="solodance.html">
               <img src="imgs/culturals/solodance.jpeg" alt="Solo Dance" class="h-[180px] rounded-lg" />
@@ -411,7 +413,7 @@
         </div>
     
         <!-- Solo Singing Card -->
-        <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+        <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
           <div class="flex justify-center">
             <a href="solosinging.html">
               <img src="imgs/culturals/solosinging.jpeg" alt="Solo Singing" class="h-[180px] rounded-lg" />
@@ -425,7 +427,7 @@
         </div>
 
         <!-- Photography Card -->
-      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
         <div class="flex justify-center">
           <a href="photography.html">
             <img src="imgs/culturals/photography.jpeg" alt="Photography" class="h-[180px] rounded-lg" />
@@ -439,7 +441,7 @@
       </div>
 
       <!-- Ramp Walk Card -->
-      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full">
+      <div class="bg-blue-950 border border-gray-600 rounded-lg p-3 shadow-lg transition transform hover:-translate-y-2 cursor-pointer w-full animate-on-scroll-up">
         <div class="flex justify-center">
           <a href="rampwalk.html">
             <img src="imgs/culturals/rampwalk.jpeg" alt="Ramp Walk" class="h-[180px] rounded-lg" />
@@ -457,7 +459,7 @@
     <br>
 
     <!--Note-->
-    <p class="text-center text-lg"><b style="color: yellow;">Note: </b> Each event has individual Registration</p>
+    <p class="text-center text-lg"><b class="text-yellow-300">Note: </b> Each event has individual Registration</p>
     <br>
     <div class="w-full py-2 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400">
       <div class="marquee-container">
