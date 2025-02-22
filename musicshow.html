@@ -43,6 +43,68 @@
             min-width: 200%;
             animation: marquee 15s linear infinite;
       }
+      @keyframes appear-left {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-right {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-up {
+        from {
+          opacity: 0;
+          transform: translateY(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      .animate-on-scroll-left {
+        animation: appear-left ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 00% cover 40%;
+      }
+      .animate-on-scroll-right {
+        animation: appear-right ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-image-up{
+        animation: appear-up ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 50%;
+      }
+      .animate-on-scroll-up {
+        animation: appear-up 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
+      }
+      .animate-on-scroll-instant-up {
+        animation: appear-up 1s ease-in-out both;
+        animation-range: entry 10% cover 40%;
+      }
+      .animate-on-scroll-instant-left {
+        animation: appear-left 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-right {
+        animation: appear-right 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
   </style>
 </head>
 <body class="bg-indigo-950 text-white font-sans m-0">
@@ -103,8 +165,8 @@
     </nav>
 
   <div class="mt-5">
-    <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2">Music Show</h1>
-    <p class="text-center mt-5 px-3 text-sm md:text-xl">
+    <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2 animate-on-scroll-instant-left">Music Show</h1>
+    <p class="text-center mt-5 px-3 text-sm md:text-xl animate-on-scroll-instant-right">
       The Music Show at AAVISHKAAR-2025 is a spectacular event that celebrates the power and beauty of music. Participants will showcase their talents and captivate audiences with unforgettable performances.
     </p>
     <br />
@@ -113,10 +175,10 @@
         src="imgs/culturals/musicshow.jpg"
         alt="Music Show"
         height="700"
-        class="h-[250px] sm:h-[500px] md:h-[650px] lg:h[700px] rounded-lg p-5"
+        class="h-[250px] sm:h-[500px] md:h-[650px] lg:h[700px] rounded-lg p-5 animate-on-scroll-instant-up"
       />
     </div>
-    <h1 class="text-center p-5 font-bold text-2xl sm:text-4xl">VIRAIVIL SANDHIPOM.....</h1>
+    <h1 class="text-center p-5 font-bold text-2xl sm:text-4xl animate-on-scroll-instant-up">VIRAIVIL SANDHIPOM.....</h1>
   </div>
 
   <div class="w-full py-2 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400">

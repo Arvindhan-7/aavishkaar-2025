@@ -43,6 +43,64 @@
             min-width: 200%;
             animation: marquee 15s linear infinite;
       }
+      @keyframes appear-left {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-right {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-up {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      .animate-on-scroll-left {
+        animation: appear-left ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-right {
+        animation: appear-right ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-up {
+        animation: appear-up 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
+      }
+      .animate-on-scroll-instant-up {
+        animation: appear-up 0.7s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-left {
+        animation: appear-left 0.7s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-right {
+        animation: appear-right 0.7s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
     </style>
   </head>
   <body class="bg-indigo-950 text-white font-sans m-0">
@@ -106,8 +164,8 @@
 
     <!--Title-->
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl "><b>About Us</b></h1>
-      <p class="text-center mt-5 px-3 text-base md:text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl animate-on-scroll-instant-left"><b>About Us</b></h1>
+      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-up">
         AAVISHKAAR-2025 is a landmark event organized by Vel Tech High Tech Dr.
         Rangarajan Dr. Sakunthala Engineering College, Avadi, Chennai. This
         grand celebration of talent, knowledge, and creativity is made possible
@@ -118,7 +176,7 @@
     <br />
 
     <!--Patron1-->
-    <div class="xl:ml-10 mt-5 px-5 xl:px-32 ">
+    <div class="xl:ml-10 mt-5 px-5 xl:px-32 animate-on-scroll-instant-left">
       <div class="flex flex-col lg:flex-row md:justify-around items-center gap-5 xl:gap-10">
         <div class="flex-shrink-0">
           <img
@@ -155,7 +213,7 @@
     <br />
 
     <!--Patron2-->
-    <div class=" xl:ml-10 px-5 xl:px-32">
+    <div class=" xl:ml-10 px-5 xl:px-32 animate-on-scroll-left">
       <div class="flex flex-col lg:flex-row justify-around items-center gap-5 xl:gap-10">
         <div class="flex-shrink-0">
           <img
@@ -192,7 +250,7 @@
     <br />
 
     <!--Patron3-->
-    <div class="xl:ml-10 px-5 xl:px-32">
+    <div class="xl:ml-10 px-5 xl:px-32 animate-on-scroll-left">
       <div class="flex flex-col lg:flex-row justify-around items-center gap-5 xl:gap-10">
         <div class="flex justify-center">
           <img
@@ -230,7 +288,7 @@
     <br />
 
     <!--Patron4-->
-    <div class="xl:ml-10 px-5 xl:px-32">
+    <div class="xl:ml-10 px-5 xl:px-32 animate-on-scroll-left">
       <div class="flex flex-col lg:flex-row justify-around items-center gap-5 xl:gap-10">
         <div class="flex justify-center">
           <img
@@ -275,14 +333,14 @@
         <img
           src="imgs\aboutus\group1.jpeg"
           alt="group1"
-          class="rounded-lg w-[900px]"
+          class="rounded-lg w-[900px] animate-on-scroll-up"
           
         />
       </div>
       
     </div>
     <div>
-      <p class="text-sm md:text-lg text-center p-3 ">
+      <p class="text-sm md:text-lg text-center p-3 animate-on-scroll-up ">
         A dedicated team of students, powered by passion and effort, is behind
         the successful realization of AAVISHKAAR-2025. Under the leadership of
         Prof. Dr. E. Kamalanaban, Principal and Guidance of Dr. M. Gopinath, Associate Dean - IIC, the organizing team has worked
@@ -292,7 +350,7 @@
       </p>
     </div>
     <!--center-->
-    <p class="text-sm md:text-lg text-center p-3">
+    <p class="text-sm md:text-lg text-center p-3 animate-on-scroll-up">
       Together, we invite you all to join us at AAVISHKAAR-2025, where innovation,
       creativity, and cultural legastative converge to create an unforgettable
       experience
