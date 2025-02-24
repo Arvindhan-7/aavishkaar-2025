@@ -43,6 +43,68 @@
             min-width: 200%;
             animation: marquee 15s linear infinite;
       }
+      @keyframes appear-left {
+        from {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-right {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes appear-up {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      .animate-on-scroll-left {
+        animation: appear-left ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-right {
+        animation: appear-right ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-image-up{
+        animation: appear-up ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 50%;
+      }
+      .animate-on-scroll-up {
+        animation: appear-up 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
+      }
+      .animate-on-scroll-instant-up {
+        animation: appear-up 1.5s ease-in-out both;
+        animation-range: entry 10% cover 40%;
+      }
+      .animate-on-scroll-instant-left {
+        animation: appear-left 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
+      .animate-on-scroll-instant-right {
+        animation: appear-right 1s ease-in-out both;
+        animation-range: entry 0% cover 40%;
+      }
     </style>
     
   </head>
@@ -106,8 +168,8 @@
 
     <!--Title&context-->
     <div class="mt-5">
-      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2">Group Dance</h1>
-      <p class="text-center mt-5 px-3 text-base md:text-xl">
+      <h1 class="text-yellow-300 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2 animate-on-scroll-instant-left">Group Dance</h1>
+      <p class="text-center mt-5 px-3 text-base md:text-xl animate-on-scroll-instant-up">
         The Group Dance event offers a platform for participants to showcase
         their dance skills through a coordinated team performance. Teams can
         choose an open theme, provided it is decent and respectful. This is an
@@ -122,13 +184,13 @@
         <img
           src="poster/culturals/Culturals/GroupDance.jpeg"
           alt="Group Dance"
-          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg"
+          class="h-[450px] sm:h-[600px] md:h-[650px] lg:h[700px] rounded-lg animate-on-scroll-up"
         />
       </div>
     </div>
     
     <br>
-      <div class="text-center text-2xl sm:text-3xl p-5">
+      <div class="text-center text-2xl sm:text-3xl p-5 animate-on-scroll-up">
         <p><b style="color: yellow;">Event on:</b> 15<sup>th</sup> March, 2025</p>
       </div>
 
@@ -136,7 +198,7 @@
     <!--Linear in one line arrangement-->
     <div class="flex justify-center p-3 w-full">
         <!--Student coordinator-->
-        <div class="flex justify-around flex-col sm:flex-col lg:flex-row gap-6 p-3 w-full">
+        <div class="flex justify-around flex-col sm:flex-col lg:flex-row gap-6 p-3 w-full animate-on-scroll-left">
           <div  class="bg-blue-950 sm:w-full rounded-lg flex flex-col gap-1 p-4 border border-gray-600 shadow-lg transition transform hover:-translate-y-3 cursor-pointer">
             <h3 class="text-yellow-300 text-xl sm:text-2xl font-bold text-center"><b>Student Coordinator</b></h3>
             <p class="text-base sm:text-lg text-center font-bold"> Ms. Yogasree. S</p>
@@ -167,7 +229,7 @@
     <!--Rules and Guidelines-->
     <div class="flex justify-center p-3 w-full">
       <div class="flex flex-col sm:flex-col md:flex-row justify-center gap-5 w-full p-3">
-        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4 animate-on-scroll-left">
           <h3 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl">Rules and Guidelines</h3>
           <ul class="p-3 flex justify-around gap-3 flex-col">
             <li>
@@ -198,7 +260,7 @@
             </li>
           </ul>
         </div>
-        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4">
+        <div class="bg-blue-950 rounded-lg border border-gray-600 w-full p-4 animate-on-scroll-right">
           <h3 class="text-yellow-300 text-center font-bold text-2xl sm:text-3xl">Notes and Requirements</h3>
           <ul class="p-3 flex justify-around gap-3 flex-col">
             <li>
@@ -228,7 +290,7 @@
   </div>
   </div>
   <div class="p-5 flex justify-center">
-    <div class="bg-blue-950 w-full rounded-lg border border-gray-600 p-3 sm:w-1/2 hover:-translate-y-3 transition cursor-pointer">
+    <div class="bg-blue-950 w-full rounded-lg border border-gray-600 p-3 sm:w-1/2 hover:-translate-y-3 transition cursor-pointer animate-on-scroll-up">
       <div>
         <h3 class="text-yellow-300 font-bold text-2xl sm:text-3xl text-center mb-3">Prizes</h3>
       </div>
